@@ -1,0 +1,230 @@
+{
+  "title": "PTU / I.K. Gujral Punjab Technical University",
+  "icon": "🎓",
+  "intro": "Comprehensive university information, academic guidelines, examination ordinances, syllabus resources, and administrative procedures for I.K. Gujral Punjab Technical University (IKGPTU). Always cross-verify official updates directly on ptu.ac.in.",
+  "topics": [
+    {
+      "id": "about",
+      "title": "About the university",
+      "keywords": [
+        "about ptu",
+        "what is ptu",
+        "tell me about ptu",
+        "about the university",
+        "what is ikgptu",
+        "about ikgptu",
+        "i.k. gujral",
+        "gujral punjab",
+        "affiliating university",
+        "which university",
+        "full form of ptu",
+        "history of ptu",
+        "university profile"
+      ],
+      "answer": "I.K. Gujral Punjab Technical University (IKGPTU), located in Jalandhar, Punjab, is a prominent state university established by the Government of Punjab. It serves as the primary affiliating university for CGC's technical, management, pharmacy, hotel management, and computer applications programs.",
+      "unconfirmed": "IKGPTU was established vide Punjab Act No. 1 of 1997 and oversees hundreds of affiliated colleges, regional campuses, and constituent institutions across Punjab, providing high-quality technical education, research opportunities, and professional skill development.",
+      "links": [
+        {
+          "title": "PTU Official Website",
+          "url": "https://ptu.ac.in/"
+        },
+        {
+          "title": "IKGPTU Administration & About",
+          "url": "https://ptu.ac.in/about-ikgptu"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "academic_system",
+      "title": "Academic system",
+      "keywords": [
+        "academic system",
+        "semester system",
+        "grading",
+        "grade",
+        "cgpa",
+        "internal assessment",
+        "mst",
+        "mid semester",
+        "pattern",
+        "marking",
+        "credits",
+        "credit system"
+      ],
+      "answer": "IKGPTU follows a rigorous semester-based academic system incorporating continuous internal evaluations, mid-semester assessments, practical lab work, and comprehensive end-semester examinations regulated by university ordinances.",
+      "unconfirmed": "Key aspects of the academic system include:\n- **Attendance Requirement:** Mandatory 75% minimum attendance in both theory and laboratory courses to qualify for end-semester examinations.\n- **Mid-Semester Tests (MSTs):** Two centralized internal assessment tests conducted per semester alongside assignments, quizzes, and class participation.\n- **Credit-Based Evaluation:** Courses are assigned specific credit weights contributing to semester grade point averages (SGPA) and cumulative grade point averages (CGPA).\n- **Grading Scale:** Standardized 10-point letter grading system (O for Outstanding, A+ for Excellent, A for Very Good, B+ for Good, B for Above Average, C for Pass, and F for Fail/Re-appear).",
+      "links": [
+        {
+          "title": "PTU Academic Regulations",
+          "url": "https://ptu.ac.in/academic-regulations"
+        },
+        {
+          "title": "PTU Website",
+          "url": "https://ptu.ac.in/"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "courses",
+      "title": "Courses under PTU",
+      "keywords": [
+        "ptu courses",
+        "courses under ptu",
+        "programmes under ptu",
+        "degrees offered",
+        "streams available"
+      ],
+      "answer": "IKGPTU offers a vast array of professional and technical degree programs across multiple faculties including Engineering & Technology (B.Tech, M.Tech), Computer Applications (BCA, MCA), Management & Business Administration (BBA, MBA), Pharmacy (B.Pharm, M.Pharm, Pharm.D), Hotel Management, Applied Sciences, and Media Studies.",
+      "unconfirmed": "Affiliated institutions like CGC Landran offer programs structured directly under IKGPTU curriculum guidelines, ensuring parity in syllabus delivery, examination standards, and degree validity across all participating colleges.",
+      "links": [
+        {
+          "title": "PTU Academic Programs",
+          "url": "https://ptu.ac.in/academic-programs"
+        },
+        {
+          "title": "PTU website",
+          "url": "https://ptu.ac.in/"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "syllabus",
+      "title": "Syllabus and Curriculum",
+      "keywords": [
+        "syllabus",
+        "scheme",
+        "curriculum",
+        "study scheme",
+        "course structure",
+        "subject codes"
+      ],
+      "answer": "Official syllabus schemes, course structures, and curriculum handbooks are published directly on the official PTU syllabus portal. Students should select their specific program and ensure they follow the scheme corresponding to their admission batch year.",
+      "unconfirmed": "General subject clusters across key disciplines include:\n- **BCA / MCA:** Programming languages, Data Structures, Database Management Systems (DBMS), Computer Networks, Web Technologies, and Software Engineering.\n- **BBA / MBA:** Principles of Management, Financial Accounting, Marketing Management, Human Resource Management, Business Law, and Strategic Management.\n- **B.Sc. Biotechnology:** Cell Biology, Biochemistry, Genetics, Molecular Biology, Immunology, and Bioinformatics.",
+      "links": [
+        {
+          "title": "PTU Official Syllabus Portal",
+          "url": "https://ptu.ac.in/syllabus"
+        },
+        {
+          "title": "PTU website",
+          "url": "https://ptu.ac.in/"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "examination",
+      "title": "Examination information",
+      "keywords": [
+        "exam",
+        "examination",
+        "exams",
+        "date sheet",
+        "datesheet",
+        "admit card",
+        "re-appear",
+        "reappear",
+        "revaluation",
+        "re-evaluation",
+        "attendance",
+        "exam form"
+      ],
+      "answer": "End-semester examinations, date sheets, admit cards, re-appear registrations, and examination notifications are centrally managed by IKGPTU and coordinated through designated university portals.",
+      "unconfirmed": "Important examination guidelines:\n- **Exam Registration:** Students must fill out examination forms and pay fees prior to deadlines via the student portal.\n- **Admit Cards:** Hall tickets are released online prior to theory and practical examinations and must be carried to the exam center along with college ID cards.\n- **Re-appear & Re-evaluation:** Students with backlog papers can register for re-appear exams in subsequent semesters. Answer script re-checking or re-evaluation can be applied through the official PTU examination website.",
+      "links": [
+        {
+          "title": "PTU Examination Portal",
+          "url": "https://www.ptuexam.com/"
+        },
+        {
+          "title": "PTU Student Examination Services",
+          "url": "https://ptu.ac.in/student-examination-portal"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "results",
+      "title": "Results and Scorecards",
+      "keywords": [
+        "result",
+        "results",
+        "marks",
+        "gazette",
+        "scorecard",
+        "grades",
+        "sgpa",
+        "cgpa scorecard"
+      ],
+      "answer": "Semester examination results, grade cards, and detailed result gazettes are officially compiled and published by IKGPTU on their dedicated examination portal.",
+      "unconfirmed": "Students can check their semester-wise results online by entering their University Roll Number. Official grade transcripts and degree certificates are subsequently issued through the institution upon successful completion of all graduation requirements.",
+      "links": [
+        {
+          "title": "PTU Examination & Results Portal",
+          "url": "https://www.ptuexam.com/"
+        },
+        {
+          "title": "PTU Document Portal",
+          "url": "https://ptu.ac.in/document-portal"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "regulations",
+      "title": "Academic regulations",
+      "keywords": [
+        "regulation",
+        "regulations",
+        "ordinance",
+        "ordinances",
+        "rules of university",
+        "policy",
+        "degree requirements",
+        "promotion rules"
+      ],
+      "answer": "Academic regulations, university ordinances, promotion criteria, maximum duration for course completion, and code of conduct guidelines are formally enacted by IKGPTU's academic council and governing bodies.",
+      "unconfirmed": "Ordinances outline critical parameters including credit requirements for degree conferral, rules governing industrial training/internships, maximum allowable academic extensions, and disciplinary protocols for examinations.",
+      "links": [
+        {
+          "title": "PTU Academic Regulations & Ordinances",
+          "url": "https://ptu.ac.in/academic-regulations"
+        },
+        {
+          "title": "PTU website",
+          "url": "https://ptu.ac.in/"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "important",
+      "title": "Important academic information",
+      "keywords": [
+        "important",
+        "notification",
+        "notifications",
+        "circular",
+        "important dates",
+        "academic calendar",
+        "announcements"
+      ],
+      "answer": "Official notifications, academic calendars, holiday lists, administrative circulars, and urgent public announcements are regularly updated on the main IKGPTU web portal.",
+      "unconfirmed": "Students and faculty members are advised to check the university notification board frequently for updates regarding fee submission deadlines, scholarship portals, convocation schedules, and registration timelines.",
+      "links": [
+        {
+          "title": "PTU Notice Board & Notifications",
+          "url": "https://ptu.ac.in/noticeboard"
+        },
+        {
+          "title": "PTU Examination Portal",
+          "url": "https://www.ptuexam.com/"
+        }
+      ],
+      "follow_ups": []
+    }
+  ]
+}

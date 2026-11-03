@@ -1,0 +1,464 @@
+{
+  "metadata": {
+    "institution": "Chandigarh Group of Colleges (CGC), Landran",
+    "location": "Sector 112, Landran, Greater Mohali, Punjab - 140307",
+    "affiliation": "I.K. Gujral Punjab Technical University (IKGPTU), Jalandhar",
+    "accreditation": "NAAC A+ Grade, NBA Accredited Courses",
+    "last_updated": "2026-04-15",
+    "official_urls": {
+      "main": "https://www.cgc.edu.in/",
+      "library": "https://www.cgc.edu.in/library",
+      "ptu": "https://ptu.ac.in/",
+      "ptu_syllabus": "https://ptu.ac.in/syllabus"
+    }
+  },
+  "documents": [
+    {
+      "id": "cgc-about-01",
+      "category": "college_info",
+      "title": "About CGC Landran Campus and Accreditation",
+      "department": "Administration",
+      "academic_year": "2025-26",
+      "source_title": "CGC Landran Official Overview",
+      "source_url": "https://www.cgc.edu.in/about-us",
+      "verified": true,
+      "tags": [
+        "about",
+        "campus",
+        "accreditation",
+        "location",
+        "naac",
+        "ptu",
+        "affiliation"
+      ],
+      "summary": "Overview of CGC Landran, establishment, NAAC A+ accreditation, and affiliation with IKGPTU.",
+      "content": "Chandigarh Group of Colleges (CGC) Landran, established in 2001, is located in Sector 112, Landran, Greater Mohali, Punjab (near Chandigarh). CGC Landran is accredited with NAAC A+ Grade and several engineering and pharmacy programs are NBA accredited. It is affiliated with I.K. Gujral Punjab Technical University (IKGPTU), Jalandhar for technical, management, pharmacy, and computer applications programs, and approved by AICTE and PCI. The campus spans over 45 acres with state-of-the-art academic blocks, research labs, centralized library, incubation centers, and residential hostels."
+    },
+    {
+      "id": "cgc-contact-01",
+      "category": "college_info",
+      "title": "Official Contact Directory, Helplines & Location",
+      "department": "Administration & Admissions",
+      "academic_year": "2025-26",
+      "source_title": "CGC Landran Contact Us",
+      "source_url": "https://www.cgc.edu.in/contact-us",
+      "verified": true,
+      "tags": [
+        "contact",
+        "phone",
+        "email",
+        "helpline",
+        "location",
+        "address",
+        "office"
+      ],
+      "summary": "Official phone numbers, email addresses, and campus location details for admissions and student inquiries.",
+      "content": "Official Campus Contacts:\n- Address: CGC Landran, Sector 112, Landran, Greater Mohali, Punjab - 140307.\n- Admission Toll-Free Helpline: 1800 200 3575, +91-95921-04444, +91-95921-14444\n- General Office: +91-172-3984200 / info@cgc.edu.in\n- Examination Cell / Registrar: registrar@cgc.edu.in / examcell@cgc.edu.in\n- Student Grievance & Help Desk: helpdesk@cgc.edu.in\n- Training & Placement Cell: crp@cgc.edu.in\n- Official Website: https://www.cgc.edu.in"
+    },
+    {
+      "id": "cgc-placements-01",
+      "category": "college_info",
+      "title": "Placements Highlights, Top Recruiters & Career Statistics",
+      "department": "Corporate Resource Program (CRP)",
+      "academic_year": "2025-26",
+      "source_title": "CGC Placements & Corporate Resource Centre",
+      "source_url": "https://www.cgc.edu.in/placements",
+      "verified": true,
+      "tags": [
+        "placements",
+        "packages",
+        "recruiters",
+        "jobs",
+        "highest package",
+        "companies",
+        "crp"
+      ],
+      "summary": "Placement statistics including 9000+ job offers, highest package of 54.75 LPA, and marquee recruiters.",
+      "content": "CGC Landran Placements Summary:\n- Total Job Offers: 9,000+ offers across multiple programs.\n- Highest Package Offered: Rs. 54.75 LPA (International/National top tier).\n- Average Package: Ranges between Rs. 6.5 LPA to Rs. 8.5 LPA for core tech and management streams.\n- Visiting Recruiters: 900+ companies including Amazon, Microsoft, Wipro, Capgemini, Cognizant, TCS, IBM, Infosys, Deloitte, HP, Accenture, and Samsung.\n- 360-degree Pre-Placement Training: Aptitude, technical coding rounds, mock interviews, and soft skill training run by the Corporate Resource Program (CRP)."
+    },
+    {
+      "id": "ptu-bca-scheme",
+      "category": "academic_syllabus",
+      "title": "Bachelor of Computer Applications (BCA) - Program & Semester Structure",
+      "department": "Computer Applications",
+      "academic_year": "2024-27",
+      "source_title": "IKGPTU Official BCA Syllabus Scheme",
+      "source_url": "https://ptu.ac.in/syllabus",
+      "verified": true,
+      "tags": [
+        "bca",
+        "syllabus",
+        "computer applications",
+        "semester 1",
+        "semester 2",
+        "semester 3",
+        "semester 4",
+        "semester 5",
+        "semester 6",
+        "subjects"
+      ],
+      "summary": "Detailed semester-by-semester subjects for the 3-Year BCA program under IKGPTU affiliation at CGC Landran.",
+      "content": "Bachelor of Computer Applications (BCA) 3-Year Degree (6 Semesters) under IKGPTU:\n- Semester 1: Programming in C (UGCA1901), Fundamentals of Computer & IT (UGCA1902), Mathematics (UGCA1903), Communication Skills (BTHU103), Programming in C Lab (UGCA1904), IT Lab (UGCA1905).\n- Semester 2: Object Oriented Programming using C++ (UGCA1906), Data Structures (UGCA1907), Digital Circuits & Logic Design (UGCA1908), Environmental Science (EVS102), C++ Lab (UGCA1909), Data Structures Lab (UGCA1910).\n- Semester 3: Database Management Systems (UGCA1911), Computer Networks (UGCA1912), Operating Systems (UGCA1913), DBMS Lab (UGCA1914), Computer Networks Lab (UGCA1915), Soft Skills Lab.\n- Semester 4: Java Programming (UGCA1916), Web Technologies (HTML/CSS/JS) (UGCA1917), Software Engineering (UGCA1918), Discrete Mathematics, Java Lab (UGCA1919), Web Technologies Lab (UGCA1920).\n- Semester 5: Programming in PHP / Python (UGCA1921), Cloud Computing (UGCA1922), Information Security / Cyber Laws (UGCA1923), Open Elective I, Server-Side Web Programming Lab (UGCA1924), Minor Project-I.\n- Semester 6: Artificial Intelligence & Machine Learning basics (UGCA1925), Mobile Application Development (Android/React Native) (UGCA1926), Major Project / Industrial Training (UGCA1927), Seminar.\nOfficial PTU syllabus documents can be accessed at https://ptu.ac.in/syllabus and https://ptu.ac.in/."
+    },
+    {
+      "id": "ptu-bca-sem5-detail",
+      "category": "academic_syllabus",
+      "title": "BCA Semester 5 Detailed Course Outline & PHP/Web Track",
+      "department": "Computer Applications",
+      "academic_year": "2024-25",
+      "source_title": "PTU BCA Semester 5 Syllabus Document",
+      "source_url": "https://ptu.ac.in/syllabus",
+      "verified": true,
+      "tags": [
+        "bca",
+        "semester 5",
+        "php",
+        "cloud computing",
+        "cyber security",
+        "syllabus",
+        "minor project"
+      ],
+      "summary": "Unit-wise syllabus for BCA 5th semester covering Server Side Scripting with PHP, Cloud Fundamentals, and Project Guidelines.",
+      "content": "BCA Semester 5 Detailed Syllabus Overview:\n1. Server-Side Web Technologies (PHP & MySQL):\n   - Unit I: Introduction to PHP, syntax, variables, data types, operators, flow control, functions, arrays, and string handling.\n   - Unit II: Form handling (, ), state management (sessions, cookies), file uploads, and sanitization.\n   - Unit III: MySQL database integration using PDO/MySQLi: connect, query execution, prepared statements, CRUD operations.\n   - Unit IV: Object Oriented PHP (Classes, Inheritance, Interfaces), JSON handling, and RESTful API fundamentals.\n2. Cloud Computing Fundamentals:\n   - Cloud models (IaaS, PaaS, SaaS), virtualization, AWS/Azure fundamentals, security, and storage services.\n3. Information Security & Cyber Laws:\n   - Cryptography basics, symmetric/asymmetric encryption, firewall principles, IT Act 2000, and OWASP Top 10 vulnerabilities.\n4. Minor Project-I: Development of full-stack database-backed web application under faculty mentorship."
+    },
+    {
+      "id": "ptu-btech-cse-scheme",
+      "category": "academic_syllabus",
+      "title": "B.Tech Computer Science & Engineering (CSE) - Core Subjects & Tracks",
+      "department": "Engineering & Technology (CEC)",
+      "academic_year": "2024-28",
+      "source_title": "IKGPTU B.Tech CSE Curriculum Guidelines",
+      "source_url": "https://ptu.ac.in/syllabus/",
+      "verified": true,
+      "tags": [
+        "btech",
+        "cse",
+        "engineering",
+        "computer science",
+        "curriculum",
+        "ai",
+        "data science",
+        "ptu"
+      ],
+      "summary": "Curriculum overview for 4-Year B.Tech CSE program including core engineering, labs, and specializations.",
+      "content": "B.Tech Computer Science and Engineering (4 Years / 8 Semesters) affiliated with IKGPTU at Chandigarh Engineering College (CEC), Landran:\n- First Year: Engineering Mathematics, Physics/Chemistry, Programming for Problem Solving (Python/C), Basic Electrical Engineering, Engineering Graphics & Design.\n- Core CSE (Sem 3 to 6): Data Structures & Algorithms, Object Oriented Programming (Java/C++), Computer Organization & Architecture, Discrete Mathematics, Operating Systems, Database Management Systems, Formal Language & Automata Theory (FLAT), Design & Analysis of Algorithms (DAA), Computer Networks, Compiler Design, Software Engineering.\n- Specialization Electives (Sem 6 to 8): Artificial Intelligence & ML, Data Science, Cyber Security, Internet of Things (IoT), Cloud Computing, and Blockchain.\n- Practical & Industry: 6-month Industrial Training in 7th/8th Semester, Major Capstone Project, Design Thinking & Innovation Labs."
+    },
+    {
+      "id": "ptu-management-bba-mba",
+      "category": "academic_syllabus",
+      "title": "Management Programs - BBA and MBA Curriculum Highlights",
+      "department": "Management & Business Studies (CBSA)",
+      "academic_year": "2024-26",
+      "source_title": "IKGPTU Department of Management Syllabus",
+      "source_url": "https://ptu.ac.in/syllabus/",
+      "verified": true,
+      "tags": [
+        "bba",
+        "mba",
+        "management",
+        "business",
+        "finance",
+        "marketing",
+        "hr",
+        "cbsa"
+      ],
+      "summary": "BBA and MBA curriculum schemes, dual specializations, internship requirements, and examination credits.",
+      "content": "Management Studies at CGC Landran (Chandigarh Business School of Administration - CBSA):\n- Bachelor of Business Administration (BBA - 3 Years): Principles of Management, Business Economics, Financial Accounting, Organizational Behavior, Marketing Management, Business Law, Human Resource Management, Financial Management, Entrepreneurship Development.\n- Master of Business Administration (MBA - 2 Years): Management Principles, Accounting for Managers, Quantitative Techniques, Marketing Strategy, Financial Engineering, Strategic Management. Specializations offered in Marketing, Finance, Human Resource Management, Business Analytics, and Information Technology.\n- Mandatory Corporate Summer Internship Project (SIP) of 6-8 weeks between 2nd and 3rd semester for MBA students."
+    },
+    {
+      "id": "ptu-pharmacy-bpharm",
+      "category": "academic_syllabus",
+      "title": "Pharmacy Programs - B.Pharmacy & M.Pharmacy Overview",
+      "department": "Pharmacy (CCP)",
+      "academic_year": "2024-28",
+      "source_title": "Pharmacy Council of India (PCI) / IKGPTU Syllabus",
+      "source_url": "https://www.cgc.edu.in/chandigarh-college-of-pharmacy",
+      "verified": true,
+      "tags": [
+        "pharmacy",
+        "bpharm",
+        "mpharm",
+        "pci",
+        "ccp",
+        "medicinal chemistry",
+        "pharmacology"
+      ],
+      "summary": "PCI-approved 4-year B.Pharm curriculum, laboratories, clinical training, and postgraduate research domains.",
+      "content": "Chandigarh College of Pharmacy (CCP), Landran offers PCI & AICTE approved programs:\n- Bachelor of Pharmacy (B.Pharm - 4 Years): Human Anatomy & Physiology, Pharmaceutical Analysis, Pharmaceutics, Pharmaceutical Inorganic Chemistry, Organic Chemistry, Biochemistry, Pathophysiology, Physical Pharmaceutics, Pharmacology, Medicinal Chemistry, Industrial Pharmacy, and Regulatory Science.\n- Master of Pharmacy (M.Pharm - 2 Years): Specializations in Pharmaceutics, Pharmacology, and Pharmaceutical Chemistry.\n- Facilities: Animal house approved by CPCSEA, Central Instrumentation Lab, Pilot Plant, and Herbal Garden."
+    },
+    {
+      "id": "cgc-library-overview",
+      "category": "library_resources",
+      "title": "Central Library Facilities, Resources & Book Bank",
+      "department": "Central Library",
+      "academic_year": "2025-26",
+      "source_title": "CGC Central Library Portal",
+      "source_url": "https://www.cgc.edu.in/library",
+      "verified": true,
+      "tags": [
+        "library",
+        "books",
+        "timing",
+        "book bank",
+        "resources",
+        "journals",
+        "e-library"
+      ],
+      "summary": "CGC Central Library holdings, circulation rules, timings, reading halls, and Book Bank scheme for students.",
+      "content": "CGC Landran Central Library (Knowledge Resource Centre):\n- Collection: Over 40,000+ printed volumes, 3,500+ titles covering Engineering, Computer Applications, Management, Pharmacy, Biotechnology, and General Sciences.\n- Timings: Monday to Saturday from 8:30 AM to 8:00 PM. Reading hall open up to 10:00 PM during mid-semester and end-semester examinations.\n- Book Bank Facility: Subsidized book bank scheme providing a complete set of prescribed textbooks for the entire semester to registered students.\n- Circulation Privileges: Undergraduate students can borrow up to 3 books for 14 days; Postgraduate students up to 5 books for 21 days; Faculty members up to 8 books for a semester.\n- Reading Hall Capacity: Air-conditioned reading halls accommodating over 500 students simultaneously with high-speed Wi-Fi access."
+    },
+    {
+      "id": "cgc-library-digital",
+      "category": "library_resources",
+      "title": "Digital Library, E-Journals, DELNET & NDLI Subscriptions",
+      "department": "Central Library & E-Learning",
+      "academic_year": "2025-26",
+      "source_title": "CGC Digital Library & Subscribed Databases",
+      "source_url": "https://www.cgc.edu.in/library",
+      "verified": true,
+      "tags": [
+        "digital library",
+        "delnet",
+        "ndli",
+        "ieee",
+        "e-books",
+        "e-journals",
+        "j-gate",
+        "opac"
+      ],
+      "summary": "Access to online repositories including DELNET, National Digital Library of India (NDLI), IEEE Xplore, and OPAC.",
+      "content": "CGC Landran Digital Library & Online Databases:\n- Online Public Access Catalogue (OPAC): Fully automated with Koha/ERP software allowing students to search book availability, author, title, and shelf location from any campus terminal or mobile portal.\n- Subscribed Databases: IEEE Xplore Digital Library, ScienceDirect/Elsevier, SpringerLink, J-Gate, and EBSCOhost for engineering, management, and pharmacy research papers.\n- National Resource Networks: Institutional Member of DELNET (Developing Library Network) enabling Inter-Library Loan (ILL) and document delivery across 5,000+ partner libraries.\n- National Digital Library of India (NDLI): Registered NDLI Institutional Club member providing free access to 60+ million digital learning resources, video lectures, and rare manuscripts.\n- E-Newspapers & Magazines: Economic Times, The Hindu, Indian Express, Business Standard, PCQuest, and Harvard Business Review accessible in the digital reading section."
+    },
+    {
+      "id": "cgc-library-rules",
+      "category": "library_resources",
+      "title": "Library Code of Conduct, Membership Rules & Overdue Policies",
+      "department": "Central Library",
+      "academic_year": "2025-26",
+      "source_title": "Official Library Regulations",
+      "source_url": "https://www.cgc.edu.in/library",
+      "verified": true,
+      "tags": [
+        "library rules",
+        "fine",
+        "overdue",
+        "membership",
+        "id card",
+        "lost book",
+        "guidelines"
+      ],
+      "summary": "Rules regarding student ID cards, barcode scanning, overdue fines (Rs. 2/day), lost book replacement, and silence zones.",
+      "content": "Library Regulations & Student Guidelines:\n- Identity Card: Student ID card with barcode is strictly non-transferable and mandatory for entering the library and borrowing books.\n- Overdue Policy: Books must be returned or renewed on or before the due date. An overdue fine of Rs. 2 per day per book is levied after the due date.\n- Lost / Damaged Books: The borrower must replace the book with the latest edition or pay twice the current market cost of the book plus accumulated fines.\n- Reference & Rare Books: Encyclopedias, dictionaries, project reports, and current periodical issues are for reference use only and cannot be issued outside the library premises.\n- Conduct: Cell phones must be kept in silent/vibration mode. Discussion is restricted to designated collaborative discussion rooms."
+    },
+    {
+      "id": "cgc-courses-directory",
+      "category": "courses_admissions",
+      "title": "Comprehensive Programs & Courses Directory at CGC Landran",
+      "department": "Admissions Directorate",
+      "academic_year": "2025-26",
+      "source_title": "CGC Landran Programs & Courses Portal",
+      "source_url": "https://www.cgc.edu.in/courses",
+      "verified": true,
+      "tags": [
+        "courses",
+        "programs",
+        "btech",
+        "bca",
+        "mca",
+        "bba",
+        "mba",
+        "bpharm",
+        "biotech",
+        "bhmct",
+        "eligibility"
+      ],
+      "summary": "Official list of Undergraduate, Postgraduate, and Lateral Entry courses across all colleges in CGC Landran.",
+      "content": "Programs Offered at CGC Landran:\n1. Engineering & Technology (CEC):\n   - B.Tech (4 Years): Computer Science & Engineering (CSE), AI & Data Science, AI & Machine Learning, Electronics & Communication (ECE), Mechanical Engineering, Civil Engineering.\n   - B.Tech Lateral Entry (3 Years): Direct admission into 2nd year for eligible diploma holders.\n   - M.Tech (2 Years): CSE, ECE, Mechanical Engineering.\n2. Computer Applications:\n   - BCA (3 Years) - Bachelor of Computer Applications\n   - MCA (2 Years) - Master of Computer Applications\n3. Management & Commerce (CBSA):\n   - BBA (3 Years), B.Com (Hons.) (3 Years), MBA (2 Years - Dual Specialization).\n4. Pharmacy (CCP):\n   - B.Pharm (4 Years), B.Pharm Lateral Entry (3 Years), M.Pharm (2 Years).\n5. Biotechnology & Applied Sciences:\n   - B.Sc (Hons.) Biotechnology, B.Sc (Hons.) Microbiology, M.Sc Biotechnology.\n6. Hotel Management & Tourism (CCH): \n   - B.Sc Hospitality & Hotel Administration, BHMCT (4 Years)."
+    },
+    {
+      "id": "cgc-admission-guidelines",
+      "category": "courses_admissions",
+      "title": "Admission Procedure, Eligibility Criteria & Verification Rules",
+      "department": "Admissions Cell",
+      "academic_year": "2025-26",
+      "source_title": "CGC Admissions Process",
+      "source_url": "https://www.cgc.edu.in/admissions",
+      "verified": true,
+      "tags": [
+        "admissions",
+        "eligibility",
+        "process",
+        "documents",
+        "apply",
+        "registration",
+        "counselling"
+      ],
+      "summary": "Eligibility norms, registration workflow, documents required, and official contact channels for admissions.",
+      "content": "Admission Guidelines at CGC Landran:\n- Application Process: Online registration via official portal https://www.cgc.edu.in or offline visit to Admission Block, CGC Landran.\n- Eligibility Criteria:\n  * B.Tech: Passed 10+2 with Physics, Mathematics, and one optional subject with minimum 45% marks (40% for reserved categories) and valid JEE Main score or State merit counselling.\n  * BCA: 10+2 in any stream with minimum 50% marks (45% for reserved category) with Mathematics/Computer Science/IT preferred.\n  * BBA / B.Com: 10+2 in any recognized stream with at least 50% aggregate marks.\n  * B.Pharm: 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% marks.\n  * MBA / MCA: Bachelor’s degree of minimum 3-year duration with at least 50% marks from a recognized university.\n- Documents Required: 10th & 12th Marksheets, Graduation degree (for PG), Migration Certificate, Character Certificate, Caste Certificate (if applicable), Aadhaar Card, Passport photographs.\n- Note: Tuition fees, scholarships (e.g. Josh Scholarship, Post-Matric schemes), and seat quotas are subject to PTU & State Government counselling notifications. For fee details, students must consult official admissions counsellors at 1800 200 3575."
+    },
+    {
+      "id": "cgc-exam-guidelines",
+      "category": "examination_support",
+      "title": "PTU Examination Rules, Internal Assessments & Grading System",
+      "department": "Examination & Academic Cell",
+      "academic_year": "2025-26",
+      "source_title": "IKGPTU Examination Regulations & Ordinances",
+      "source_url": "https://ptu.ac.in/examinations/",
+      "verified": true,
+      "tags": [
+        "exams",
+        "mid-semester",
+        "end-semester",
+        "internal marks",
+        "attendance",
+        "grading",
+        "re-appear"
+      ],
+      "summary": "Information regarding MSTs, End Semester exams, minimum 75% attendance rule, SGPA/CGPA grading, and re-evaluation.",
+      "content": "Examination and Assessment Policies:\n- Minimum Attendance: Mandatory 75% attendance in theory and laboratory classes to be eligible to appear in End Semester Examinations as per IKGPTU ordinances.\n- Mid-Semester Tests (MSTs): Two centralized MSTs conducted each semester contributing to the continuous internal assessment marks along with assignments and attendance.\n- End Semester Examination: Conducted centrally by IKGPTU at designated university exam centers.\n- Grading Scale: 10-point letter grading system (O: Outstanding, A+: Excellent, A: Very Good, B+: Good, B: Above Average, C: Pass, F: Fail).\n- Re-appear / Re-evaluation: Students can register for re-appear exams in subsequent semesters or apply for answer script re-checking through the PTU student portal (https://ptu.ac.in)."
+    },
+    {
+      "id": "cgc-departments-list",
+      "category": "departments_colleges",
+      "title": "Academic Departments and Colleges at CGC Landran",
+      "department": "Academic Affairs",
+      "academic_year": "2025-26",
+      "source_title": "CGC Landran Departments & Colleges Directory",
+      "source_url": "https://www.cgc.edu.in/courses",
+      "verified": true,
+      "tags": [
+        "department",
+        "departments",
+        "department name",
+        "colleges",
+        "institutes",
+        "faculty",
+        "schools",
+        "branches",
+        "list of departments",
+        "cec",
+        "cbsa",
+        "ccp",
+        "cch",
+        "dca"
+      ],
+      "summary": "Complete roster of academic departments, constituent colleges, and faculties operating at CGC Landran.",
+      "content": "CGC Landran comprises 7 major constituent colleges and 10+ specialized academic departments offering AICTE, PCI, and IKGPTU approved programs:\n\n1. **Department of Computer Applications (DCA)**\n   - Constituent Institute: Chandigarh Business School of Administration / DCA\n   - Key Programs: Bachelor of Computer Applications (BCA - 3 Years), Master of Computer Applications (MCA - 2 Years)\n   - Focus: Web Development (PHP/Python/Full-Stack), Cloud Computing, App Development, Database Systems, Software Engineering.\n\n2. **Department of Computer Science & Engineering (CSE)**\n   - Constituent Institute: Chandigarh Engineering College (CEC - NAAC A+, NBA Accredited)\n   - Key Programs: B.Tech CSE, B.Tech AI & Data Science, B.Tech AI & Machine Learning, M.Tech CSE, B.Tech Lateral Entry.\n   - Focus: Algorithms, Machine Learning, Cloud Architecture, Cyber Security, High-Performance Computing.\n\n3. **Department of Electronics & Communication Engineering (ECE)**\n   - Constituent Institute: Chandigarh Engineering College (CEC)\n   - Key Programs: B.Tech ECE, M.Tech ECE, B.Tech Lateral Entry.\n   - Focus: VLSI Design, Embedded Systems, IoT, Wireless Communication, Signal Processing.\n\n4. **Department of Mechanical Engineering (ME) & Civil Engineering (CE)**\n   - Constituent Institute: Chandigarh Engineering College (CEC)\n   - Key Programs: B.Tech Mechanical Engineering, B.Tech Civil Engineering.\n   - Focus: CAD/CAM Robotics, Thermal Engineering, Structural Design, Surveying, Environmental Tech.\n\n5. **Department of Management Studies**\n   - Constituent Institute: Chandigarh Business School of Administration (CBSA)\n   - Key Programs: Bachelor of Business Administration (BBA - 3 Years), Master of Business Administration (MBA - 2 Years Dual Specialization).\n   - Focus: Marketing, Finance, HR, Business Analytics, International Business, Corporate Entrepreneurship.\n\n6. **Department of Commerce**\n   - Constituent Institute: Chandigarh Business School of Administration (CBSA)\n   - Key Programs: Bachelor of Commerce (B.Com Hons. - 3 Years).\n   - Focus: Auditing, Financial Accounting, Corporate Taxation, Fintech, GST & Corporate Law.\n\n7. **Department of Pharmaceutical Sciences**\n   - Constituent Institute: Chandigarh College of Pharmacy (CCP - PCI & AICTE Approved)\n   - Key Programs: B.Pharm (4 Years), B.Pharm Lateral Entry (3 Years), M.Pharm (Pharmaceutics, Pharmacology).\n   - Focus: Drug Formulation, Pharmacology, Medicinal Chemistry, Clinical Trials, Pharmacovigilance.\n\n8. **Department of Biotechnology & Applied Sciences**\n   - Constituent Institute: Chandigarh Group of Colleges (CGC)\n   - Key Programs: B.Sc (Hons.) Biotechnology, B.Sc (Hons.) Microbiology, M.Sc Biotechnology.\n   - Focus: Recombinant DNA, Microbial Genetics, Bio-process Engineering, Immunology, Plant/Animal Tissue Culture.\n\n9. **Department of Hotel Management & Catering Technology**\n   - Constituent Institute: Chandigarh College of Hospitality (CCH)\n   - Key Programs: B.Sc Hospitality & Hotel Administration, Bachelor of Hotel Management & Catering Technology (BHMCT - 4 Years).\n   - Focus: Culinary Arts, Food & Beverage Service, Front Office Operations, Tourism & Resort Management.\n\n10. **Department of Applied Sciences & Humanities**\n    - Constituent Institute: Chandigarh Engineering College (CEC)\n    - Focus: Engineering Physics, Engineering Chemistry, Engineering Mathematics, Communication Skills, and Professional Ethics for First-Year Engineering."
+    },
+    {
+      "id": "cgc-dept-dca",
+      "category": "departments_colleges",
+      "title": "Department of Computer Applications (BCA & MCA)",
+      "department": "Computer Applications",
+      "academic_year": "2025-26",
+      "source_title": "CGC DCA Department Portal",
+      "source_url": "https://www.cgc.edu.in/bca",
+      "verified": true,
+      "tags": [
+        "computer applications",
+        "dca",
+        "bca",
+        "mca",
+        "it department",
+        "coding",
+        "web development"
+      ],
+      "summary": "Details on the Department of Computer Applications offering 3-year BCA and 2-year MCA degrees.",
+      "content": "The Department of Computer Applications (DCA) at CGC Landran offers premier IT education under IKGPTU affiliation.\n- Programs: BCA (Bachelor of Computer Applications - 3 Years), MCA (Master of Computer Applications - 2 Years).\n- Labs: Advanced Web Technology Lab (PHP/MySQL), Java Programming Lab, Python & AI Lab, Database Management Lab.\n- Career Opportunities: Software Developer, Web Architect, Cloud Support Engineer, Database Administrator with recruiters like Amazon, Wipro, Capgemini, TCS."
+    },
+    {
+      "id": "cgc-dept-cec",
+      "category": "departments_colleges",
+      "title": "Chandigarh Engineering College (CEC) - Engineering Departments",
+      "department": "Engineering & Technology",
+      "academic_year": "2025-26",
+      "source_title": "CEC Landran Official Portal",
+      "source_url": "https://www.cgc.edu.in/cec",
+      "verified": true,
+      "tags": [
+        "cec",
+        "engineering department",
+        "cse",
+        "ece",
+        "mechanical",
+        "civil",
+        "chandigarh engineering college"
+      ],
+      "summary": "Chandigarh Engineering College houses NAAC A+ and NBA accredited engineering departments.",
+      "content": "Chandigarh Engineering College (CEC) Landran houses the engineering departments:\n- Departments: Computer Science & Engineering (CSE), Artificial Intelligence & Data Science, Electronics & Communication (ECE), Mechanical Engineering (ME), and Civil Engineering (CE).\n- Accreditations: NAAC A+ Grade, NBA accredited courses, AICTE approved, IKGPTU affiliated.\n- Research & Innovation: Dedicated Centre of Excellence (CoE), robotics incubation cell, 3D printing lab, IEEE Student Branch."
+    },
+    {
+      "id": "cgc-dept-cbsa",
+      "category": "departments_colleges",
+      "title": "Chandigarh Business School of Administration (CBSA) - Management & Commerce",
+      "department": "Management & Commerce",
+      "academic_year": "2025-26",
+      "source_title": "CBSA Official Portal",
+      "source_url": "https://www.cgc.edu.in/cbsa",
+      "verified": true,
+      "tags": [
+        "cbsa",
+        "management department",
+        "commerce department",
+        "bba",
+        "mba",
+        "bcom",
+        "business school"
+      ],
+      "summary": "CBSA comprises the Department of Management and the Department of Commerce.",
+      "content": "Chandigarh Business School of Administration (CBSA) at CGC Landran:\n- Departments: Department of Management Studies (BBA, MBA) and Department of Commerce (B.Com Hons).\n- Specializations: Marketing, Finance, Human Resource Management, Business Analytics, Information Technology.\n- Corporate Tie-ups: Live simulations, Bloomberg terminal concepts, summer corporate internships, KPMG and Deloitte recruitment drives."
+    },
+    {
+      "id": "cgc-dept-ccp",
+      "category": "departments_colleges",
+      "title": "Chandigarh College of Pharmacy (CCP)",
+      "department": "Pharmaceutical Sciences",
+      "academic_year": "2025-26",
+      "source_title": "CCP Official Portal",
+      "source_url": "https://www.cgc.edu.in/chandigarh-college-of-pharmacy",
+      "verified": true,
+      "tags": [
+        "ccp",
+        "pharmacy department",
+        "bpharm",
+        "mpharm",
+        "pci",
+        "pharmaceutical sciences"
+      ],
+      "summary": "Chandigarh College of Pharmacy offers PCI approved B.Pharm and M.Pharm degrees.",
+      "content": "Chandigarh College of Pharmacy (CCP) Landran:\n- Department: Department of Pharmaceutical Sciences\n- Approvals: Pharmacy Council of India (PCI), AICTE, Affiliated with IKGPTU\n- Programs: B.Pharm (4 Years), B.Pharm Lateral Entry (3 Years), M.Pharm (Pharmaceutics, Pharmacology)\n- Infrastructure: CPCSEA-approved central animal house, medicinal herbal garden, pilot formulation plant."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How can I access my BCA syllabus for semester 5?",
+      "answer": "You can access the official BCA Semester 5 syllabus under Computer Applications in the Academic Hub of CampusMind AI or directly from the official PTU syllabus portal at https://ptu.ac.in/syllabus. Subjects include PHP/Server-Side Scripting, Cloud Computing, and Information Security.",
+      "category": "academic_syllabus",
+      "source": "https://ptu.ac.in/wp-content/uploads/2021/12/BCA"
+    },
+    {
+      "question": "What are the library timings and book bank rules at CGC Landran?",
+      "answer": "The Central Library is open Monday to Saturday from 8:30 AM to 8:00 PM (and up to 10:00 PM during exam weeks). Under the Book Bank scheme, students receive complete semester textbook kits. General books can be borrowed for 14 days with an overdue fine of Rs. 2/day.",
+      "category": "library_resources",
+      "source": "https://www.cgc.edu.in/library"
+    },
+    {
+      "question": "What is the highest and average placement package at CGC Landran?",
+      "answer": "CGC Landran records over 9,000+ job offers from 900+ visiting recruiters. The highest package offered is Rs. 54.75 LPA, and average packages for core streams range between 6.5 LPA to 8.5 LPA.",
+      "category": "college_info",
+      "source": "https://www.cgc.edu.in/placements"
+    },
+    {
+      "question": "Who should I contact for admission inquiries and fee structure?",
+      "answer": "For official admissions and certified fee structure, call the CGC Landran toll-free helpline at 1800 200 3575, +91-95921-04444, or email info@cgc.edu.in. You can also visit the admission office at Sector 112, Landran, Greater Mohali.",
+      "category": "courses_admissions",
+      "source": "https://www.cgc.edu.in/contact-us"
+    },
+    {
+      "question": "Can I access IEEE research papers and DELNET from CGC library?",
+      "answer": "Yes. CGC Landran Central Library provides campus-wide access to IEEE Xplore, ScienceDirect, DELNET (inter-library loan across 5,000+ libraries), and the National Digital Library of India (NDLI). Access is available in the Digital Library section.",
+      "category": "library_resources",
+      "source": "https://www.cgc.edu.in/library"
+    }
+  ]
+}

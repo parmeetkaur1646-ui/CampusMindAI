@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusMind AI — Context-Aware College Help Desk | CGC Landran</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Marked.js for markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              800: '#075985',
+              900: '#0c4a6e',
+              navy: '#0b132b',
+              dark: '#1c2541'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col font-sans">
+
+  <!-- TOP HEADER / NAV -->
+  <header class="header-glass sticky top-0 z-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Brand Logo & Identity -->
+        <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('home')">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-navy via-slate-800 to-cyan-600 flex items-center justify-center text-white shadow-md relative">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-cyan-300"></i>
+            <span class="absolute -top-1 -right-1 flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+            </span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-lg tracking-tight text-slate-900">CampusMind <span class="text-cyan-600">AI</span></span>
+              <span class="text-[10px] uppercase font-semibold bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">CGC Landran</span>
+            </div>
+            <p class="text-xs text-slate-500">Context-Aware Digital Help Desk</p>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Tabs -->
+        <nav class="hidden md:flex items-center gap-1">
+          <button onclick="switchTab('home')" id="tab-home" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700 active">Home</button>
+          <button onclick="switchTab('chat')" id="tab-chat" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700 flex items-center gap-1.5">
+            <span class="ai-orb"></span>
+            AI Assistant
+          </button>
+          <button onclick="switchTab('academic')" id="tab-academic" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700">Academic</button>
+          <button onclick="switchTab('library')" id="tab-library" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700">Library</button>
+          <button onclick="switchTab('courses')" id="tab-courses" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700">Courses</button>
+          <button onclick="switchTab('college')" id="tab-college" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700">CGC Landran</button>
+          <button onclick="switchTab('ptu')" id="tab-ptu" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700">PTU</button>
+          <button onclick="switchTab('admin')" id="tab-admin" class="nav-tab px-3 py-2 text-sm font-medium rounded-md hover:text-blue-700 text-slate-600 flex items-center gap-1">
+            <i data-lucide="shield" class="w-4 h-4"></i> Admin
+          </button>
+        </nav>
+
+        <!-- Right Quick Actions -->
+        <div class="hidden sm:flex items-center gap-2">
+          <a href="/download/campusmind_ai.zip" download class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-3.5 py-2 rounded-lg shadow-sm flex items-center gap-1.5 transition">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Download ZIP</span>
+          </a>
+          <a href="tel:18002003575" class="text-xs flex items-center gap-1 text-slate-600 hover:text-blue-600 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-emerald-600"></i>
+            <span class="font-medium">1800 200 3575</span>
+          </a>
+          <button onclick="switchTab('chat')" class="bg-blue-700 hover:bg-blue-800 text-white text-xs font-semibold px-3.5 py-2 rounded-lg shadow-sm flex items-center gap-1.5 transition">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            Ask AI
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="p-2 text-slate-600 hover:text-slate-900">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1">
+      <button onclick="switchTab('home')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Home</button>
+      <button onclick="switchTab('chat')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-blue-700 hover:bg-slate-100 flex items-center gap-2">
+        <span class="ai-orb"></span> AI Assistant
+      </button>
+      <button onclick="switchTab('academic')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Academic Hub & Syllabus</button>
+      <button onclick="switchTab('library')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Central Digital Library</button>
+      <button onclick="switchTab('courses')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Courses & Eligibility</button>
+      <button onclick="switchTab('college')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">College & Placements</button>
+      <button onclick="switchTab('ptu')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">PTU</button>
+      <button onclick="switchTab('admin')" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Admin Dashboard</button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8">
+
+    <!-- 1. LANDING PAGE VIEW -->
+    <section id="view-home" class="space-y-12">
+      <!-- Hero Section -->
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-navy via-slate-900 to-blue-950 text-white p-8 md:p-14 shadow-xl border border-slate-800">
+        <div class="relative z-10 max-w-3xl space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-cyan-300 text-xs font-semibold">
+            <span class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            Official RAG Assistant • NAAC A+ Accredited Campus
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            Your Campus. Your Knowledge. <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">One Intelligent Assistant.</span>
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            CampusMind AI connects CGC Landran students, applicants, and faculty with verified academic syllabi, central library resources, course guides, and campus services through context-aware natural conversation.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <button onclick="switchTab('chat')" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-cyan-500/20 flex items-center gap-2 transition">
+              <i data-lucide="bot" class="w-5 h-5"></i>
+              Launch AI Assistant
+            </button>
+            <button onclick="switchTab('academic')" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-6 py-3.5 rounded-xl flex items-center gap-2 transition">
+              <i data-lucide="book-open" class="w-5 h-5 text-cyan-400"></i>
+              Browse PTU Syllabus
+            </button>
+            <button onclick="switchTab('library')" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-6 py-3.5 rounded-xl flex items-center gap-2 transition">
+              <i data-lucide="library" class="w-5 h-5 text-cyan-400"></i>
+              Central Library
+            </button>
+          </div>
+        </div>
+
+        <!-- Decorative Knowledge Mesh Background -->
+        <div class="absolute -right-16 -bottom-16 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute right-12 top-12 opacity-15 hidden lg:block">
+          <i data-lucide="network" class="w-80 h-80 text-cyan-300"></i>
+        </div>
+      </div>
+
+      <!-- Quick Action Cards Grid -->
+      <div>
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Campus Services & Discovery</h2>
+          <span class="text-xs text-slate-500">Official Sources Verified</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div onclick="switchTab('chat'); preprompt('Where can I find my BCA syllabus?');" class="feature-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm cursor-pointer hover:border-blue-400">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+              <i data-lucide="file-text" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-slate-900 text-lg mb-1">Syllabus Navigator</h3>
+            <p class="text-slate-500 text-sm">Locate IKGPTU approved syllabus schemes, semester subjects, and course codes for BCA, B.Tech, BBA & Pharmacy.</p>
+          </div>
+
+          <div onclick="switchTab('library')" class="feature-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm cursor-pointer hover:border-blue-400">
+            <div class="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-4">
+              <i data-lucide="book-marked" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-slate-900 text-lg mb-1">Central Library</h3>
+            <p class="text-slate-500 text-sm">Books, e-books, journals, magazines and newspapers, with the official rules and subscription lists.</p>
+          </div>
+
+          <div onclick="switchTab('courses')" class="feature-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm cursor-pointer hover:border-blue-400">
+            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
+              <i data-lucide="compass" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-slate-900 text-lg mb-1">Course Explorer</h3>
+            <p class="text-slate-500 text-sm">Explore Undergraduate, Postgraduate & Lateral Entry degrees across Engineering, DCA, Management & Pharmacy.</p>
+          </div>
+
+          <div onclick="switchTab('college')" class="feature-card bg-white p-6 rounded-2xl border border-slate-200 shadow-sm cursor-pointer hover:border-blue-400">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+              <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-slate-900 text-lg mb-1">Placements & Info</h3>
+            <p class="text-slate-500 text-sm">10,000+ placement offers, 1,300+ recruiters, highest package ₹1.14 Cr per annum (per cgc.edu.in), top corporate recruiters & campus contact directory.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Campus Key Metrics Showcase -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-blue-700">NAAC A+</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">National Grade Accreditation</div>
+          </div>
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-cyan-600">9,000+</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">Placement Offers Recorded</div>
+          </div>
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-indigo-600">1.25 lakh+</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">Books on open shelves (official library page)</div>
+          </div>
+          <div class="space-y-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-emerald-600">45+ Acres</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">High-Tech Wi-Fi Campus</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Official Portals Grid -->
+      <div class="border-t border-slate-200 pt-8">
+        <h3 class="text-base font-bold text-slate-700 uppercase tracking-wider mb-4">Official Institutional Verification Portals</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a href="https://www.cgc.edu.in/" target="_blank" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-blue-400 flex items-center justify-between group">
+            <div>
+              <div class="text-sm font-semibold text-slate-900 group-hover:text-blue-600">CGC Landran Official</div>
+              <div class="text-xs text-slate-400">cgc.edu.in</div>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-blue-600"></i>
+          </a>
+          <a href="https://www.cgc.edu.in/library" target="_blank" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-blue-400 flex items-center justify-between group">
+            <div>
+              <div class="text-sm font-semibold text-slate-900 group-hover:text-blue-600">CGC Central Library</div>
+              <div class="text-xs text-slate-400">cgc.edu.in/library</div>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-blue-600"></i>
+          </a>
+          <a href="https://ptu.ac.in/" target="_blank" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-blue-400 flex items-center justify-between group">
+            <div>
+              <div class="text-sm font-semibold text-slate-900 group-hover:text-blue-600">IKGPTU Official Portal</div>
+              <div class="text-xs text-slate-400">ptu.ac.in</div>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-blue-600"></i>
+          </a>
+          <a href="https://ptu.ac.in/syllabus" target="_blank" class="p-4 rounded-xl bg-white border border-slate-200 hover:border-blue-400 flex items-center justify-between group">
+            <div>
+              <div class="text-sm font-semibold text-slate-900 group-hover:text-blue-600">PTU Syllabus Archive</div>
+              <div class="text-xs text-slate-400">ptu.ac.in/syllabus</div>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-blue-600"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. AI CHAT WORKSPACE VIEW -->
+    <section id="view-chat" class="hidden space-y-4">
+      
+      <!-- Journey Mode & Context Memory Header -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm space-y-4">
+        
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <!-- Journey Modes Selector -->
+          <div class="flex items-center gap-1.5 p-1 bg-slate-100 rounded-xl">
+            <button onclick="setJourneyMode('Student')" id="mode-Student" class="mode-btn active px-3 py-1.5 text-xs font-semibold rounded-lg border border-transparent transition">🎓 Student</button>
+            <button onclick="setJourneyMode('Applicant')" id="mode-Applicant" class="mode-btn px-3 py-1.5 text-xs font-semibold rounded-lg border border-transparent text-slate-600 hover:text-slate-900 transition">📝 Applicant</button>
+            <button onclick="setJourneyMode('Faculty')" id="mode-Faculty" class="mode-btn px-3 py-1.5 text-xs font-semibold rounded-lg border border-transparent text-slate-600 hover:text-slate-900 transition">👨‍🏫 Faculty</button>
+            <button onclick="setJourneyMode('Guest')" id="mode-Guest" class="mode-btn px-3 py-1.5 text-xs font-semibold rounded-lg border border-transparent text-slate-600 hover:text-slate-900 transition">🌐 Guest</button>
+          </div>
+
+          <!-- Active Context Memory Pill / Inspector -->
+          <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-xl text-xs text-blue-900">
+              <i data-lucide="brain-circuit" class="w-4 h-4 text-blue-600"></i>
+              <span class="font-semibold">Memory:</span>
+              <span id="memory-display" class="font-medium text-slate-700">Course: None • Sem: None</span>
+            </div>
+            <button onclick="openEditMemoryModal()" title="Edit Context Memory" class="p-1.5 text-slate-500 hover:text-blue-600 hover:bg-slate-100 rounded-lg border border-slate-200">
+              <i data-lucide="edit-3" class="w-3.5 h-3.5"></i>
+            </button>
+            <button onclick="clearContextMemory()" title="Clear Active Memory" class="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-slate-100 rounded-lg border border-slate-200">
+              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Chat Stream Box -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[650px] overflow-hidden">
+        
+        <!-- Messages Area -->
+        <div id="chat-messages" class="flex-1 p-4 sm:p-6 overflow-y-auto space-y-4">
+          
+          <!-- Welcome message -->
+          <div class="flex gap-3">
+            <div class="w-9 h-9 rounded-full bg-blue-700 flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+              <i data-lucide="bot" class="w-5 h-5"></i>
+            </div>
+            <div class="chat-msg-bot p-4 max-w-2xl space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-xs text-blue-900">CampusMind AI</span>
+                <span class="badge-verified"><i data-lucide="check-circle" class="w-3 h-3"></i> CGC Verified RAG</span>
+              </div>
+              <div class="text-sm text-slate-800 leading-relaxed">
+                Hello! I am your context-aware college help desk for <strong>Chandigarh Group of Colleges (CGC), Landran</strong>.
+                <br><br>
+                Ask me about your <strong>BCA / B.Tech / BBA / Pharmacy syllabus</strong>, <strong>Central Library resources & timings</strong>, <strong>course eligibility</strong>, or <strong>examination regulations</strong>.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Suggested Follow-Up Prompts Bar -->
+        <div id="quick-prompts-bar" class="px-4 py-2 border-t border-slate-100 bg-slate-50 flex items-center gap-2 overflow-x-auto text-xs whitespace-nowrap">
+          <span class="text-slate-400 font-semibold uppercase text-[10px]">Try asking:</span>
+          <button onclick="sendQuickPrompt('What are all the department names at CGC Landran?')" class="bg-white border border-slate-200 hover:border-blue-400 px-2.5 py-1 rounded-full text-slate-700 transition">Department names & colleges</button>
+          <button onclick="sendQuickPrompt('Where can I find my BCA syllabus?')" class="bg-white border border-slate-200 hover:border-blue-400 px-2.5 py-1 rounded-full text-slate-700 transition">Where can I find my BCA syllabus?</button>
+          <button onclick="sendQuickPrompt('What are the central library timings and rules?')" class="bg-white border border-slate-200 hover:border-blue-400 px-2.5 py-1 rounded-full text-slate-700 transition">Library timings & book bank</button>
+          <button onclick="sendQuickPrompt('What is the eligibility for BCA at CGC Landran?')" class="bg-white border border-slate-200 hover:border-blue-400 px-2.5 py-1 rounded-full text-slate-700 transition">BCA eligibility & admissions</button>
+          <button onclick="sendQuickPrompt('What was the highest placement package at CGC Landran?')" class="bg-white border border-slate-200 hover:border-blue-400 px-2.5 py-1 rounded-full text-slate-700 transition">Placements & recruiters</button>
+        </div>
+
+        <!-- Chat Input Form -->
+        <div class="p-3 sm:p-4 border-t border-slate-200 bg-white">
+          <form id="chat-form" onsubmit="handleChatSubmit(event)" class="flex gap-2">
+            <input 
+              type="text" 
+              id="chat-input" 
+              placeholder="Ask a question (e.g. 'I need my BCA syllabus', 'What about semester 5?', 'PHP study notes')..." 
+              class="flex-1 bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
+              autocomplete="off"
+            >
+            <button 
+              type="submit" 
+              id="chat-send-btn"
+              class="bg-blue-700 hover:bg-blue-800 text-white px-5 py-3 rounded-xl font-medium text-sm flex items-center justify-center gap-2 shadow-sm transition disabled:opacity-50"
+            >
+              <span>Send</span>
+              <i data-lucide="send" class="w-4 h-4"></i>
+            </button>
+          </form>
+          <div class="flex items-center justify-between mt-2 px-1 text-[11px] text-slate-400">
+            <span>Grounding: Official CGC Landran & PTU Knowledge Base</span>
+            <button onclick="openEscalationModal()" class="text-blue-600 hover:underline">Can't find answer? Contact Help Desk</button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 3. ACADEMIC HUB VIEW -->
+    <section id="view-academic" class="hidden space-y-8"><div id="academic-root" class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm"></div>
+<details class="bg-white rounded-2xl border border-slate-200 p-4"><summary class="cursor-pointer font-semibold text-slate-700">More tools: official syllabus search and AI notes/quiz generator</summary><div class="space-y-8 mt-4">
+      
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+        <div class="max-w-3xl space-y-2">
+          <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">IKGPTU Affiliated Curriculum</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Academic Syllabus & Learning Hub</h2>
+          <p class="text-slate-500 text-sm">
+            Search officially approved curriculum schemes, download syllabus documents, and generate syllabus-aligned revision notes and quizzes.
+          </p>
+        </div>
+
+        <!-- Academic Filter Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 pt-6 border-t border-slate-100">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Select Program / Course</label>
+            <select id="academic-course-filter" onchange="filterAcademicSyllabus()" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+              <option value="">All Programs</option>
+              <option value="B.Tech CSE">B.Tech CSE</option>
+              <option value="B.Tech IT">B.Tech IT</option>
+              <option value="B.Tech AI & ML">B.Tech AI & ML</option>
+              <option value="B.Tech ECE">B.Tech ECE</option>
+              <option value="B.Tech Mechanical">B.Tech Mechanical</option>
+              <option value="B.Tech AI & Data Science">B.Tech AI & Data Science</option>
+              <option value="B.Tech CSE (IoT & Cyber Security incl. Blockchain)">B.Tech CSE (IoT & Cyber Security incl. Blockchain)</option>
+              <option value="B.Tech CSE (Data Science)">B.Tech CSE (Data Science)</option>
+              <option value="B.Tech CSE (Cyber Security)">B.Tech CSE (Cyber Security)</option>
+              <option value="B.Tech Electronics & Computer Engineering">B.Tech Electronics & Computer Engineering</option>
+              <option value="B.Tech Robotics & AI">B.Tech Robotics & AI</option>
+              <option value="B.Tech Lateral Entry (LEET)">B.Tech Lateral Entry (LEET)</option>
+              <option value="M.Tech CSE">M.Tech CSE</option>
+              <option value="M.Tech IT">M.Tech IT</option>
+              <option value="M.Tech ECE">M.Tech ECE</option>
+              <option value="M.Tech Mechanical">M.Tech Mechanical</option>
+              <option value="BCA" selected>BCA</option>
+              <option value="MCA">MCA</option>
+              <option value="BBA">BBA</option>
+              <option value="MBA">MBA</option>
+              <option value="MBA (Digital Marketing)">MBA (Digital Marketing)</option>
+              <option value="B.Pharm">B.Pharm</option>
+              <option value="B.Pharm (Lateral Entry)">B.Pharm (Lateral Entry)</option>
+              <option value="M.Pharm (Pharmaceutics)">M.Pharm (Pharmaceutics)</option>
+              <option value="M.Pharm (Pharmacy Practice)">M.Pharm (Pharmacy Practice)</option>
+              <option value="M.Pharm (Pharmacology)">M.Pharm (Pharmacology)</option>
+              <option value="M.Pharm (Regulatory Affairs)">M.Pharm (Regulatory Affairs)</option>
+              <option value="Pharm.D">Pharm.D</option>
+              <option value="Pharm.D (Post Baccalaureate)">Pharm.D (Post Baccalaureate)</option>
+              <option value="B.Sc Biotechnology">B.Sc Biotechnology</option>
+              <option value="M.Sc Biotechnology">M.Sc Biotechnology</option>
+              <option value="B.Sc Graphics & Web Designing">B.Sc Graphics & Web Designing</option>
+              <option value="B.Sc Multimedia">B.Sc Multimedia</option>
+              <option value="B.Sc AI & ML">B.Sc AI & ML</option>
+              <option value="B.Sc (Hons) Nutrition & Dietetics">B.Sc (Hons) Nutrition & Dietetics</option>
+              <option value="BHMCT">BHMCT</option>
+              <option value="BTTM (Tourism & Travel Management)">BTTM (Tourism & Travel Management)</option>
+              <option value="Bachelor of Management Studies (Airlines, Tourism & Hospitality)">Bachelor of Management Studies (Airlines, Tourism & Hospitality)</option>
+              <option value="B.Voc (Hospitality & Catering Management)">B.Voc (Hospitality & Catering Management)</option>
+              <option value="B.Com (Hons)">B.Com (Hons)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Select Semester</label>
+            <select id="academic-sem-filter" onchange="filterAcademicSyllabus()" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+              <option value="">All Semesters</option>
+              <option value="1">Semester 1</option>
+              <option value="2">Semester 2</option>
+              <option value="3">Semester 3</option>
+              <option value="4">Semester 4</option>
+              <option value="5" selected>Semester 5</option>
+              <option value="6">Semester 6</option>
+              <option value="7">Semester 7</option>
+              <option value="8">Semester 8</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Keyword / Subject</label>
+            <input type="text" id="academic-keyword" onkeyup="filterAcademicSyllabus()" placeholder="e.g. PHP, Cloud, DBMS..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+          </div>
+        </div>
+      </div>
+
+      <!-- Syllabus Results List -->
+      <div id="syllabus-results-container" class="space-y-4">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- AI Study Tools: Revision Generator & Quiz Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- Tool 1: Revision Notes Generator -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-lg">AI Revision Notes Generator</h3>
+              <p class="text-xs text-slate-500">Curriculum-aligned summary notes for examination preparation</p>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Subject</label>
+              <input type="text" id="notes-subject" value="Server-Side Web Technologies (PHP)" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Topic / Unit</label>
+              <input type="text" id="notes-topic" value="PDO Database Connectivity & Sessions" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+            </div>
+            <button onclick="generateRevisionNotes()" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2.5 rounded-lg text-sm transition flex items-center justify-center gap-2">
+              <i data-lucide="file-text" class="w-4 h-4"></i> Generate Revision Notes
+            </button>
+          </div>
+
+          <div id="revision-notes-output" class="hidden p-4 rounded-xl bg-slate-50 border border-slate-200 text-sm max-h-60 overflow-y-auto"></div>
+        </div>
+
+        <!-- Tool 2: Practice Quiz Generator -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
+              <i data-lucide="help-circle" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-lg">Practice Quiz</h3>
+              <p class="text-xs text-slate-500">Test your conceptual understanding of semester subjects</p>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Subject</label>
+              <input id="quiz-subject" list="subject-suggestions" value="PHP" placeholder="Any subject, e.g. DBMS, Marketing, Pharmacology" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+              <datalist id="subject-suggestions"><option value="PHP"><option value="Cloud Computing"><option value="Data Structures"><option value="DBMS"><option value="Operating Systems"><option value="Java"><option value="Python"><option value="Marketing Management"><option value="Financial Accounting"><option value="Pharmacology"></datalist>
+            </div>
+            <button onclick="generatePracticeQuiz()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 rounded-lg text-sm transition flex items-center justify-center gap-2">
+              <i data-lucide="check-square" class="w-4 h-4"></i> Start Practice Quiz
+            </button>
+          </div>
+
+          <div id="quiz-output" class="hidden space-y-3"></div>
+        </div>
+
+      </div>
+
+    </div></details>
+    </section>
+
+    <!-- 4. DIGITAL LIBRARY VIEW -->
+    <section id="view-library" class="hidden space-y-8"><div id="library-root"></div>
+<details class="bg-white rounded-2xl border border-slate-200 p-4"><summary class="cursor-pointer font-semibold text-slate-700">More: official library resources and links</summary><div class="space-y-8 mt-4">
+      
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="max-w-2xl space-y-2">
+            <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider">Knowledge Resource Centre</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">CGC Landran Central Library</h2>
+            <p class="text-slate-500 text-sm">
+              Fully automated with LIBSYS and monitored by CCTV, with over 1.25 lakh books on open shelves plus CDs, e-books, journals and e-journals (per the official CGC library page).
+            </p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-1 text-xs text-slate-600">
+            <div class="font-bold text-slate-800 flex items-center gap-1.5">
+              <i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> Operating Hours
+            </div>
+            <div>Not published on the official page</div>
+            <div class="text-blue-700 font-medium">See the Library Rules PDF or ask the library</div>
+          </div>
+        </div>
+
+        <!-- Library Filter Bar -->
+        <div class="flex flex-wrap items-center gap-2 mt-6 pt-6 border-t border-slate-100">
+          <button onclick="filterLibrary('all')" id="lib-all" class="lib-filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-blue-700 text-white transition">All Resources</button>
+          <button onclick="filterLibrary('e-journals')" id="lib-e-journals" class="lib-filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">E-Journals (IEEE, ScienceDirect)</button>
+          <button onclick="filterLibrary('e-books')" id="lib-e-books" class="lib-filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">National Digital Library (NDLI)</button>
+          <button onclick="filterLibrary('inter-library')" id="lib-inter-library" class="lib-filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">DELNET Network</button>
+          <button onclick="filterLibrary('book-bank')" id="lib-book-bank" class="lib-filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Book Bank Scheme</button>
+          <button onclick="filterLibrary('opac')" id="lib-opac" class="lib-filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition">Koha OPAC</button>
+        </div>
+      </div>
+
+      <!-- Library Resource Cards Grid -->
+      <div id="library-resources-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Library Regulations & Guidelines Card -->
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 space-y-4">
+        <h3 class="font-bold text-blue-950 text-base flex items-center gap-2">
+          <i data-lucide="shield-alert" class="w-5 h-5 text-blue-700"></i>
+          Official Library Code of Conduct & Borrowing Limits
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-blue-900">
+          <div class="bg-white/80 p-3.5 rounded-xl border border-blue-100">
+            <span class="font-bold block mb-1">Undergraduate Students</span>
+            Borrow up to 3 books for 14 calendar days. Renewal permitted once if no prior reservation exists.
+          </div>
+          <div class="bg-white/80 p-3.5 rounded-xl border border-blue-100">
+            <span class="font-bold block mb-1">Postgraduate Students</span>
+            Borrow up to 5 books for 21 calendar days. Access to dedicated research terminals.
+          </div>
+          <div class="bg-white/80 p-3.5 rounded-xl border border-blue-100">
+            <span class="font-bold block mb-1">Overdue Regulations</span>
+            Fine of ₹2 per day per volume. Reference books & periodicals are strictly for in-library reading.
+          </div>
+        </div>
+      </div>
+
+    </div></details>
+    </section>
+
+    <!-- 5. COURSE EXPLORER VIEW -->
+    <section id="view-courses" class="hidden space-y-8">
+      
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+        <div class="max-w-3xl space-y-2">
+          <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">CGC Landran Academic Offerings</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Courses & Programs Directory</h2>
+          <p class="text-slate-500 text-sm">
+            AICTE, PCI, and IKGPTU approved undergraduate, postgraduate, and lateral-entry degree programs across all campus departments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Courses List by Department -->
+      <div id="courses-departments-container" class="space-y-6">
+        <!-- Rendered via JS -->
+      </div>
+
+    </section>
+
+    <!-- 6. COLLEGE INFO & PLACEMENTS VIEW -->
+    <section id="view-college" class="hidden space-y-8"><div id="cgc-root"></div>
+<details class="bg-white rounded-2xl border border-slate-200 p-4"><summary class="cursor-pointer font-semibold text-slate-700">More: college overview and placement highlights</summary><div class="space-y-8 mt-4">
+      
+      <!-- College Overview -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
+        <div>
+          <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Institution Profile</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">About Chandigarh Group of Colleges, Landran</h2>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Established in 2001 in Sector 112, Greater Mohali, Punjab, CGC Landran is accredited with NAAC A+ Grade and recognized for academic excellence across engineering, management, pharmacy, computer applications, and biosciences. Affiliated with I.K. Gujral Punjab Technical University (IKGPTU), Jalandhar.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-slate-100">
+          <div class="space-y-1">
+            <span class="text-xs text-slate-400 font-semibold uppercase">Affiliation</span>
+            <p class="text-sm font-bold text-slate-800">I.K. Gujral Punjab Technical University (IKGPTU)</p>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs text-slate-400 font-semibold uppercase">Accreditations</span>
+            <p class="text-sm font-bold text-slate-800">NAAC A+ Grade, NBA Accredited Programs</p>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs text-slate-400 font-semibold uppercase">Campus Infrastructure</span>
+            <p class="text-sm font-bold text-slate-800">45+ Acres, 40,000+ Vol Library, Innovation Hubs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Placements Showcase -->
+      <div class="bg-gradient-to-br from-slate-900 to-blue-950 rounded-2xl p-8 text-white space-y-6 shadow-md">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Corporate Resource Program (CRP)</span>
+            <h3 class="text-2xl font-bold">Placements & Career Milestones</h3>
+          </div>
+          <div class="bg-cyan-500/10 border border-cyan-400/30 px-4 py-2 rounded-xl text-cyan-300 font-bold text-lg">
+            Highest: ₹1.14 Cr per annum
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">10,000+</div>
+            <div class="text-xs text-slate-300 mt-1">Placement Offers (official site)</div>
+          </div>
+          <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+            <div class="text-2xl sm:text-3xl font-extrabold text-blue-400">1,300+</div>
+            <div class="text-xs text-slate-300 mt-1">Recruiting Companies</div>
+          </div>
+          <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+            <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">22 LPA</div>
+            <div class="text-xs text-slate-300 mt-1">Highest, B.Tech CSE Batch 2026 (programme page)</div>
+          </div>
+          <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700">
+            <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">360°</div>
+            <div class="text-xs text-slate-300 mt-1">Pre-Placement Prep</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-3">Key Corporate Recruiters</span>
+          <div class="flex flex-wrap gap-2 text-xs font-medium">
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Amazon</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Microsoft</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Capgemini</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Wipro</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Cognizant</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">TCS</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">IBM</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Infosys</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Deloitte</span>
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-200">Samsung</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Official Contact Directory -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
+        <h3 class="text-lg font-bold text-slate-900">Campus Contact Directory & Official Channels</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-xs font-bold text-slate-500 uppercase">Toll-Free Helpline</span>
+            <p class="font-bold text-blue-700 text-base">1800 200 3575</p>
+            <p class="text-xs text-slate-500">General & admission inquiries</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-xs font-bold text-slate-500 uppercase">Direct Admissions Cell</span>
+            <p class="font-bold text-slate-800">+91-95921-04444</p>
+            <p class="text-xs text-slate-500">+91-95921-14444</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="text-xs font-bold text-slate-500 uppercase">General Inquiries</span>
+            <p class="font-bold text-slate-800">info@cgc.edu.in</p>
+            <p class="text-xs text-slate-500">Student help: helpdesk@cgc.edu.in</p>
+          </div>
+        </div>
+      </div>
+
+    </div></details>
+    </section>
+
+    <!-- 7. ADMIN DASHBOARD VIEW -->
+    <!-- PTU / I.K. Gujral Punjab Technical University -->
+    <section id="view-ptu" class="hidden space-y-8">
+      <div id="ptu-root"></div>
+    </section>
+
+    <section id="view-admin" class="hidden space-y-8">
+      
+      <!-- Login state check container -->
+      <div id="admin-login-box" class="max-w-md mx-auto bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+        <div class="text-center space-y-2">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mx-auto">
+            <i data-lucide="lock" class="w-6 h-6"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900">Administrator Login</h2>
+          <p class="text-xs text-slate-500">Secure access to knowledge management & feedback audits</p>
+        </div>
+
+        <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Username</label>
+            <input type="text" id="admin-username" value="admin" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Password</label>
+            <input type="password" id="admin-password" value="admin123" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+          </div>
+          <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2.5 rounded-lg text-sm transition">
+            Sign In to Admin Panel
+          </button>
+        </form>
+        <p class="text-center text-xs text-slate-400">Default demo credentials: <span class="font-mono text-slate-600">admin / admin123</span></p>
+      </div>
+
+      <!-- Authenticated Admin Workspace -->
+      <div id="admin-panel" class="hidden space-y-6">
+        
+        <div class="flex flex-wrap items-center justify-between gap-4 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">Knowledge & Audit Management</h2>
+            <p class="text-xs text-slate-500">Logged in as: <span id="admin-user-display" class="font-bold text-blue-700">admin</span></p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="openUploadModal()" class="bg-blue-700 hover:bg-blue-800 text-white text-xs font-semibold px-4 py-2 rounded-lg flex items-center gap-1.5 transition">
+              <i data-lucide="upload-cloud" class="w-4 h-4"></i> Upload Document
+            </button>
+            <button onclick="handleAdminLogout()" class="border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-semibold px-4 py-2 rounded-lg transition">
+              Logout
+            </button>
+          </div>
+        </div>
+
+        <!-- Admin Sub-tabs -->
+        <div class="flex gap-2 border-b border-slate-200">
+          <button onclick="switchAdminTab('docs')" id="adm-tab-docs" class="px-4 py-2 text-sm font-semibold border-b-2 border-blue-700 text-blue-700">Indexed Documents</button>
+          <button onclick="switchAdminTab('feedback')" id="adm-tab-feedback" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">User Feedback</button>
+          <button onclick="switchAdminTab('unresolved')" id="adm-tab-unresolved" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Unresolved Inquiries</button>
+          <button onclick="switchAdminTab('audit')" id="adm-tab-audit" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900">Audit Logs</button>
+        </div>
+
+        <!-- Subtab 1: Indexed Documents -->
+        <div id="adm-view-docs" class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-slate-900">Knowledge Documents in Database</h3>
+            <span id="docs-count-badge" class="text-xs bg-blue-100 text-blue-800 px-2.5 py-1 rounded-full font-bold">0 Documents</span>
+          </div>
+          <div id="admin-docs-table" class="overflow-x-auto">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+        <!-- Subtab 2: User Feedback -->
+        <div id="adm-view-feedback" class="hidden bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+          <h3 class="font-bold text-slate-900">Student & User Rating Log</h3>
+          <div id="admin-feedback-table" class="overflow-x-auto">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+        <!-- Subtab 3: Unresolved Inquiries -->
+        <div id="adm-view-unresolved" class="hidden bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+          <h3 class="font-bold text-slate-900">Unresolved / Escalated Inquiries</h3>
+          <div id="admin-unresolved-table" class="overflow-x-auto">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+        <!-- Subtab 4: Audit Logs -->
+        <div id="adm-view-audit" class="hidden bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+          <h3 class="font-bold text-slate-900">Administrative Audit Trails</h3>
+          <div id="admin-audit-table" class="overflow-x-auto">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <i data-lucide="graduation-cap" class="w-5 h-5 text-cyan-400"></i>
+          <span class="font-bold text-slate-200">CampusMind AI</span>
+          <span>• Dedicated Help Desk for CGC Landran, Mohali</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="https://www.cgc.edu.in" target="_blank" class="hover:text-cyan-400 transition">cgc.edu.in</a>
+          <a href="https://www.cgc.edu.in/library" target="_blank" class="hover:text-cyan-400 transition">Library Portal</a>
+          <a href="https://ptu.ac.in" target="_blank" class="hover:text-cyan-400 transition">PTU Website</a>
+          <a href="https://ptu.ac.in/syllabus" target="_blank" class="hover:text-cyan-400 transition">PTU Syllabus</a>
+        </div>
+      </div>
+      <p class="text-slate-500 text-center sm:text-left leading-relaxed">
+        Disclaimer: CampusMind AI grounds factual answers in verified official documents from CGC Landran and IKGPTU. For official fee decisions, semester exam marks, or confidential student records, please contact the respective administrative offices directly.
+      </p>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- 1. Edit Context Memory Modal -->
+  <div id="modal-edit-memory" class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 space-y-4 shadow-xl">
+      <div class="flex items-center justify-between">
+        <h3 class="font-bold text-slate-900 text-lg">Edit Active Conversation Context</h3>
+        <button onclick="closeEditMemoryModal()" class="text-slate-400 hover:text-slate-600"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Current Course</label>
+          <input type="text" id="modal-course" placeholder="e.g. BCA, B.Tech CSE, BBA" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Current Semester</label>
+          <input type="text" id="modal-sem" placeholder="e.g. 5" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Subject Focus</label>
+          <input type="text" id="modal-subject" placeholder="e.g. PHP, Cloud Computing" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+        </div>
+      </div>
+      <div class="flex justify-end gap-2 pt-2">
+        <button onclick="closeEditMemoryModal()" class="px-4 py-2 text-sm text-slate-600 hover:bg-slate-100 rounded-lg font-medium">Cancel</button>
+        <button onclick="saveContextMemory()" class="px-4 py-2 text-sm bg-blue-700 hover:bg-blue-800 text-white rounded-lg font-semibold">Save Context</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Document Upload Modal (Admin) -->
+  <div id="modal-upload" class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-xl">
+      <div class="flex items-center justify-between">
+        <h3 class="font-bold text-slate-900 text-lg">Upload Knowledge Document</h3>
+        <button onclick="closeUploadModal()" class="text-slate-400 hover:text-slate-600"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form onsubmit="handleDocumentUpload(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Select File (.txt, .md, .pdf)</label>
+          <input type="file" id="upload-file" required class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Category</label>
+          <select id="upload-category" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+            <option value="academic_syllabus">Academic Syllabus</option>
+            <option value="library_resources">Library Resources</option>
+            <option value="courses_admissions">Courses & Admissions</option>
+            <option value="college_info">College Info</option>
+            <option value="examination_support">Examination & Policies</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Department</label>
+          <input type="text" id="upload-department" value="Computer Applications" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeUploadModal()" class="px-4 py-2 text-sm text-slate-600 hover:bg-slate-100 rounded-lg font-medium">Cancel</button>
+          <button type="submit" class="px-4 py-2 text-sm bg-blue-700 hover:bg-blue-800 text-white rounded-lg font-semibold">Upload & Index</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Human Escalation Modal -->
+  <div id="modal-escalate" class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 space-y-4 shadow-xl">
+      <div class="flex items-center justify-between">
+        <h3 class="font-bold text-slate-900 text-lg">Contact Campus Help Desk</h3>
+        <button onclick="closeEscalationModal()" class="text-slate-400 hover:text-slate-600"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <p class="text-xs text-slate-500">
+        If you require assistance with confidential student documents, marks, or official decisions, submit your inquiry below to route it to the campus office.
+      </p>
+      <form onsubmit="handleEscalationSubmit(event)" class="space-y-3">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Your Question or Issue</label>
+          <textarea id="escalate-query" rows="3" required placeholder="Describe your question in detail..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm"></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Contact Email / Phone</label>
+          <input type="text" id="escalate-contact" required placeholder="your.name@student.cgc.edu.in" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm">
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeEscalationModal()" class="px-4 py-2 text-sm text-slate-600 hover:bg-slate-100 rounded-lg font-medium">Cancel</button>
+          <button type="submit" class="px-4 py-2 text-sm bg-blue-700 hover:bg-blue-800 text-white rounded-lg font-semibold">Submit Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+  <script src="/static/js/sections.js"></script>
+</body>
+</html>

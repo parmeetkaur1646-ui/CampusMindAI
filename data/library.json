@@ -1,0 +1,325 @@
+{
+  "title": "Library",
+  "icon": "📚",
+  "intro": "Answers come from the official CGC library page where possible. Items marked 'not confirmed' come from the project's older stored data.",
+  "topics": [
+    {
+      "id": "location",
+      "title": "Library location",
+      "keywords": [
+        "where is the library",
+        "where s the library",
+        "where is library",
+        "where the library is",
+        "where can i find the library",
+        "find the library",
+        "library location",
+        "location",
+        "located",
+        "directions",
+        "which building",
+        "which floor",
+        "how to reach the library"
+      ],
+      "answer": "The Central Library is part of the CGC Landran campus (Sector 112, Landran, Mohali, Punjab). The exact building and floor: Information not available yet.",
+      "unconfirmed": null,
+      "links": [
+        {
+          "title": "CGC Library page",
+          "url": "https://www.cgc.edu.in/library"
+        },
+        {
+          "title": "CEC Institute Library",
+          "url": "https://www.cecmohali.org/institute-library"
+        },
+        {
+          "title": "COE Library",
+          "url": "https://www.cgccoe.org/library"
+        },
+        {
+          "title": "CCT Library",
+          "url": "https://www.cctmohali.org/library"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "timing",
+      "title": "Library timings",
+      "keywords": [
+        "timing",
+        "timings",
+        "time",
+        "hours",
+        "opening",
+        "closing",
+        "schedule",
+        "open on",
+        "open till",
+        "working hours"
+      ],
+      "unconfirmed": null,
+      "answer": "Monday to Saturday, 8:30 AM to 8:00 PM. The reading hall stays open up to 10:00 PM during mid-semester and end-semester examinations.",
+      "links": [
+        {
+          "title": "Library Rules (PDF)",
+          "url": "https://www.cgc.edu.in/assets/documents/library/CGC%20LIBRARY%20RULES.pdf"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "open_now",
+      "title": "Is the library open?",
+      "keywords": [
+        "open now",
+        "open today",
+        "library open",
+        "is open",
+        "closed today",
+        "open right now"
+      ],
+      "unconfirmed": null,
+      "answer": "I can't see live status. The stored timings are Monday to Saturday, 8:30 AM to 8:00 PM (reading hall till 10:00 PM in exam periods). Please check with the library before you go.",
+      "links": [
+        {
+          "title": "CGC Library page",
+          "url": "https://www.cgc.edu.in/library"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "rules",
+      "title": "Library rules",
+      "keywords": [
+        "rule",
+        "rules",
+        "regulation",
+        "regulations",
+        "conduct",
+        "fine",
+        "fines",
+        "penalty",
+        "overdue",
+        "lost book",
+        "discipline"
+      ],
+      "answer": "From the official CGC Library Rules PDF:\n**Card:** every student needs a stamp-size photograph for the identity-cum-library card. It is non-transferable, must be carried in the library and college, and shown when staff ask. Report a lost card at once so the membership can be blocked.\n**Borrowing:** graduate and postgraduate students can issue 3 books for 21 days. A fine is charged for late return.\n**Reference books and magazines** can only be read inside the library.\n**Belongings:** bags, personal items and books from other libraries must be left at the property counter. The library is not responsible for them. Show your files and books to the staff at the check-point when leaving.\n**Conduct:** no eating, sleeping or smoking. Keep silence and switch off mobile phones.\n**Care of books:** do not write on, mark or tear books. Borrowers are responsible for damage, so report existing damage before issue.\n**Lost book:** tell the librarian and replace it or pay its price within a week of the due date. The late fine continues until it is settled.\nAfter reading, leave books on the table and do not shelve them. Ask the staff if you cannot find something.",
+      "unconfirmed": null,
+      "links": [
+        {
+          "title": "Library Rules (PDF)",
+          "url": "https://www.cgc.edu.in/assets/documents/library/CGC%20LIBRARY%20RULES.pdf"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "issue",
+      "title": "How to issue a book",
+      "keywords": [
+        "issue",
+        "borrow",
+        "take a book",
+        "get a book",
+        "membership",
+        "library card",
+        "id card"
+      ],
+      "answer": "To borrow books you need your identity-cum-library card (it cannot be shared with anyone). Graduate and postgraduate students can issue 3 books for 21 days. Reference books and magazines are for use inside the library only, and bags must be left at the property counter. The exact steps at the issue counter are not in the rules PDF: Information not available yet.",
+      "unconfirmed": null,
+      "links": [
+        {
+          "title": "Library Rules (PDF)",
+          "url": "https://www.cgc.edu.in/assets/documents/library/CGC%20LIBRARY%20RULES.pdf"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "return",
+      "title": "How to return a book",
+      "keywords": [
+        "return",
+        "renew",
+        "renewal",
+        "due date",
+        "submit book",
+        "give back"
+      ],
+      "answer": "Return books on or before the due date (21 days after issue). A fine is charged for late return; the PDF does not state the amount. If a book is lost, tell the librarian and replace it or pay its price within a week of the due date. After reading in the library, leave books on the table. The renewal procedure: Information not available yet.",
+      "unconfirmed": "Older stored data mentions a late fine of Rs. 2 per day per book and renewal on or before the due date.",
+      "links": [
+        {
+          "title": "Library Rules (PDF)",
+          "url": "https://www.cgc.edu.in/assets/documents/library/CGC%20LIBRARY%20RULES.pdf"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "limit",
+      "title": "How many books can I issue",
+      "keywords": [
+        "how many",
+        "limit",
+        "maximum",
+        "max books",
+        "number of books",
+        "allowed to issue",
+        "how long can i keep"
+      ],
+      "answer": "Graduate and postgraduate students can issue 3 books for 21 days (official Library Rules). Limits for faculty or staff: Information not available yet.",
+      "unconfirmed": "The help-desk data adds 'extra books for meritorious/SC students'. This is not in the official PDF text.",
+      "links": [
+        {
+          "title": "Library Rules (PDF)",
+          "url": "https://www.cgc.edu.in/assets/documents/library/CGC%20LIBRARY%20RULES.pdf"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "facilities",
+      "title": "Library facilities",
+      "keywords": [
+        "facility",
+        "facilities",
+        "services",
+        "collection",
+        "how many books are there",
+        "reading hall",
+        "wifi",
+        "wi-fi",
+        "book bank",
+        "what does the library have"
+      ],
+      "answer": "Per the official library page: the library is fully automated with LIBSYS software, monitored by CCTV, and has over 1.25 lakh books on open shelves, plus CDs, e-books, journals and e-journals.",
+      "unconfirmed": "A subsidised Book Bank scheme for prescribed textbooks, and air-conditioned reading halls for 500+ students with Wi-Fi.\n\nHelp-desk data: the CCT library has 9495+ volumes and 1217+ titles; the CGC group libraries about 1.21 lakh+ volumes (the official page says over 1.25 lakh). Software: LIBSYS catalogue and Turnitin plagiarism checking.",
+      "links": [
+        {
+          "title": "CGC Library page",
+          "url": "https://www.cgc.edu.in/library"
+        },
+        {
+          "title": "Magazines 2026",
+          "url": "https://www.cgc.edu.in/assets/images/library/LIST%20OF%20MAGAZINES-CGC%202026.png"
+        },
+        {
+          "title": "Newspapers 2026",
+          "url": "https://www.cgc.edu.in/assets/images/library/LIST%20OF%20NEWSPAPERS-CGC%202026.png"
+        },
+        {
+          "title": "Print journals 2026",
+          "url": "https://www.cgc.edu.in/assets/images/library/LIST%20OF%20PRINT%20JOURNALS-CGC%202026.png"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "digital",
+      "title": "Digital library",
+      "keywords": [
+        "digital",
+        "e-book",
+        "ebook",
+        "e-books",
+        "e-journal",
+        "e-journals",
+        "online library",
+        "database",
+        "ieee",
+        "delnet",
+        "ndli",
+        "e-resource",
+        "e-resources"
+      ],
+      "answer": "The library subscribes to e-books and e-journals usable anytime, anywhere. The official guide is the Digi Library PDF. Login details are not published.",
+      "unconfirmed": "Online Public Access Catalogue (OPAC): Fully automated with Koha/ERP software allowing students to search book availability, author, title, and shelf location from any campus terminal or mobile portal.\nSubscribed Databases: IEEE Xplore Digital Library, ScienceDirect/Elsevier, SpringerLink, J-Gate, and EBSCOhost for engineering, management, and pharmacy research papers.\nNational Resource Networks: Institutional Member of DELNET (Developing Library Network) enabling Inter-Library Loan (ILL) and document delivery across 5,000+ partner libraries.\nNational Digital Library of India (NDLI): Registered NDLI Institutional Club member providing free access to 60+ million digital learning resources, video lectures, and rare manuscripts.\nE-Newspapers & Magazines: Economic Times, The Hindu, Indian Express, Business Standard, PCQuest, and Harvard Business Review accessible in the digital reading section.\n\nHelp-desk data: EBSCO e-books (2.49 lakh+), National Digital Library (45 lakh+), DELNET and EBSCO e-journals.",
+      "links": [
+        {
+          "title": "Digi Library (PDF)",
+          "url": "https://www.cgc.edu.in/assets/images/library/DIGI%20LIBRARY%20ANYTIME%20ANYWHERE.pdf"
+        },
+        {
+          "title": "CBS E-Libraries & Journals",
+          "url": "https://cbsmohali.org/e-libraries-journals"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "search",
+      "title": "Search for a book",
+      "keywords": [
+        "search",
+        "catalog",
+        "catalogue",
+        "opac",
+        "availability",
+        "available book",
+        "find a book",
+        "find book",
+        "locate book"
+      ],
+      "unconfirmed": null,
+      "answer": "Stored data says books can be searched by title, author or shelf location through the library's online catalogue (OPAC). The catalogue link itself: Information not available yet.",
+      "links": [
+        {
+          "title": "CGC Library page",
+          "url": "https://www.cgc.edu.in/library"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "contact",
+      "title": "Library contact and help",
+      "keywords": [
+        "contact",
+        "phone",
+        "email",
+        "help",
+        "librarian",
+        "helpline",
+        "call"
+      ],
+      "answer": "A library-specific phone/email: Information not available yet. For general help use the CGC helpline 1800-200-3575.",
+      "unconfirmed": null,
+      "links": [
+        {
+          "title": "CGC Contact Us",
+          "url": "https://www.cgc.edu.in/contact-us"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "overview",
+      "title": "About the library",
+      "keywords": [
+        "library",
+        "about library",
+        "tell me about the library"
+      ],
+      "answer": "Per the official library page: fully automated with LIBSYS, CCTV monitored, over 1.25 lakh books on open shelves, plus CDs, e-books, journals and e-journals. Ask me about its location, timings, rules, facilities or digital library.",
+      "unconfirmed": null,
+      "links": [
+        {
+          "title": "CGC Library page",
+          "url": "https://www.cgc.edu.in/library"
+        },
+        {
+          "title": "CCP Library",
+          "url": "https://www.ccpmohali.org/"
+        },
+        {
+          "title": "CCHMCT Library",
+          "url": "https://www.cchmct.org/"
+        }
+      ],
+      "follow_ups": []
+    }
+  ]
+}

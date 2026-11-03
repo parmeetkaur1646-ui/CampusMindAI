@@ -1,0 +1,77 @@
+{
+  "_help": "CGC Landran course catalog with official programmes, categories, standardized aliases, and course duration/years.",
+  "source": "CGC Landran Official Catalog",
+  "checked": "2026-11-02",
+  "categories": [
+    {
+      "category_name": "Engineering — B.Tech / M.Tech",
+      "courses": [
+        {
+          "name": "Computer Science Engineering (CSE)",
+          "aliases": ["btech cse", "cse"],
+          "years": 4
+        },
+        {
+          "name": "Information Technology (IT)",
+          "aliases": ["btech it", "it"],
+          "years": 4
+        },
+        {
+          "name": "Artificial Intelligence and Machine Learning (AI & ML)",
+          "aliases": ["btech cse ai ml", "ai ml"],
+          "years": 4
+        },
+        {
+          "name": "Artificial Intelligence and Data Science (AI & DS)",
+          "aliases": ["btech ai ds", "ai ds"],
+          "years": 4
+        },
+        {
+          "name": "Electronics and Communication Engineering (ECE)",
+          "aliases": ["btech ece", "ece"],
+          "years": 4
+        },
+        {
+          "name": "Mechanical Engineering",
+          "aliases": ["btech mechanical", "btech me"],
+          "years": 4
+        },
+        {
+          "name": "CSE — Data Science",
+          "aliases": ["btech cse ds"],
+          "years": 4
+        },
+        {
+          "name": "CSE — Cyber Security",
+          "aliases": ["btech cse cyber"],
+          "years": 4
+        },
+        {
+          "name": "CSE — IoT and Cyber Security, including Blockchain",
+          "aliases": ["btech cse iot"],
+          "years": 4
+        },
+        {
+          "name": "Robotics and Artificial Intelligence",
+          "aliases": ["btech robotics"],
+          "years": 4
+        },
+        {
+          "name": "Electronic and Computer Engineering",
+          "aliases": ["btech electronics computer"],
+          "years": 4
+        },
+        {
+          "name": "M.Tech in CSE, IT, ECE and Mechanical Engineering",
+          "aliases": ["mtech cse", "mtech it", "mtech ece", "mtech mechanical"],
+          "years": 2
+        },
+                {
+          "name": "B.Tech lateral-entry (LEET) options",
+          "aliases": ["btech leet"],
+          "years": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "title": "CGC Landran",
+  "icon": "🏫",
+  "intro": "Official facts come from cgc.edu.in. Items marked 'not confirmed' come from the project's older stored data. Fees, courses and scholarships are answered by the chatbot's programme-aware answers.",
+  "topics": [
+    {
+      "id": "about",
+      "title": "About CGC Landran",
+      "keywords": [
+        "about cgc",
+        "about college",
+        "about the college",
+        "tell me about cgc",
+        "cgc landran",
+        "overview",
+        "established",
+        "accreditation",
+        "naac",
+        "nba",
+        "affiliation"
+      ],
+      "answer": "Chandigarh Group of Colleges (CGC) Landran is in Sector 112, Landran, Mohali, Punjab. Per the official site it was established in 2001 and offers 55+ UG and PG programmes; the Admissions page states NAAC A+ accreditation.",
+      "unconfirmed": "Chandigarh Group of Colleges (CGC) Landran, established in 2001, is located in Sector 112, Landran, Greater Mohali, Punjab (near Chandigarh). CGC Landran is accredited with NAAC A+ Grade and several engineering and pharmacy programs are NBA accredited. It is affiliated with I.K. Gujral Punjab Technical University (IKGPTU), Jalandhar for technical, management, pharmacy, and computer applications programs, and approved by AICTE and PCI. The campus spans over 45 acres with state-of-the-art academic blocks, research labs, centralized library, incubation centers, and residential hostels.\n\nHelp-desk data: Chandigarh College of Technology (CCT), Landran is part of CGC. Director Principal: Dr. Palki Sahib Kaur. Affiliation: IKGPTU, AICTE, NAAC A+.",
+      "links": [
+        {
+          "title": "Overview",
+          "url": "https://www.cgc.edu.in/overview"
+        },
+        {
+          "title": "Approval & Affiliation",
+          "url": "https://www.cgc.edu.in/approvals-and-affiliations"
+        }
+      ],
+      "follow_ups": [
+        "Courses offered",
+        "Placements",
+        "Contact CGC"
+      ]
+    },
+    {
+      "id": "campus",
+      "title": "Campus information",
+      "keywords": [
+        "campus",
+        "infrastructure",
+        "acres",
+        "blocks",
+        "labs",
+        "laboratory"
+      ],
+      "answer": "CGC offers an official 360° campus tour on its website.",
+      "unconfirmed": "The campus spans over 45 acres with academic blocks, research labs, a centralized library, incubation centers and residential hostels.",
+      "links": [
+        {
+          "title": "360° Campus Tour",
+          "url": "https://www.cgc.edu.in/virtual-tour"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+  "id": "departments_and_colleges",
+  "title": "Constituent Colleges & Departments at CGC Landran",
+  "keywords": [
+    "departments",
+    "department names",
+    "colleges",
+    "constituent colleges",
+    "cec",
+    "coe",
+    "cct",
+    "cbsa",
+    "ccp",
+    "cch"
+  ],
+  "answer": "Chandigarh Group of Colleges (CGC) Landran comprises the following constituent colleges and departments:\n\n1. **Chandigarh Engineering College (CEC)**\n   - Programs: B.Tech (CSE, AI & ML, ECE, ME, Robotics) & M.Tech\n\n2. **CGC College of Engineering (COE)**\n   - Programs: B.Tech Programs\n\n3. **Chandigarh College of Technology (CCT)**\n   - Programs: BCA, B.Sc Multimedia, Biotechnology, Microbiology, MCA, M.Sc\n\n4. **Chandigarh Business School of Administration (CBSA)**\n   - Programs: BBA, B.Com (Hons), MBA, M.Com\n\n5. **Chandigarh College of Pharmacy (CCP)**\n   - Programs: B.Pharm, Pharm.D, M.Pharm, D.Pharm\n\n6. **Chandigarh College of Hospitality (CCH)**\n   - Programs: BHMCT, BTTM, B.Sc HHA, Nutrition & Dietetics",
+  "links": [
+    {
+      "title": "CGC Landran Programs",
+      "url": "https://www.cgc.edu.in"
+    }
+  ],
+  "follow_ups": [
+    "BCA eligibility & admissions",
+    "Where can I find my BCA syllabus?",
+    "Placements & recruiters"
+  ]
+},
+    {
+      "id": "admission",
+      "title": "Admission information",
+      "keywords": [
+        "admission",
+        "admissions",
+        "eligibility",
+        "apply",
+        "how to apply",
+        "registration",
+        "documents required",
+        "lateral entry",
+        "leet"
+      ],
+      "answer": "The official Admissions page shows 4 steps: 1) Apply on the website, 2) Register with your details, 3) Fill the form and pay, 4) Upload documents and submit. Eligibility is not listed there; check the programme page or call helpline 1800-200-3575.",
+      "unconfirmed": "Admission Guidelines at CGC Landran:\n- Application Process: Online registration via official portal https://www.cgc.edu.in or offline visit to Admission Block, CGC Landran.\n- Eligibility Criteria:\n  * B.Tech: Passed 10+2 with Physics, Mathematics, and one optional subject with minimum 45% marks (40% for reserved categories) and valid JEE Main score or State merit counselling.\n  * BCA: 10+2 in any stream with minimum 50% marks (45% for reserved category) with Mathematics/Computer Science/IT preferred.\n  * BBA / B.Com: 10+2 in any recognized stream with at least 50% aggregate marks.\n  * B.Pharm: 10+2 with Physics, Chemistry, and Biology/Mathematics with minimum 50% marks.\n  * MBA / MCA: Bachelor’s degree of minimum 3-year duration with at least 50% marks from a recognized university.\n- Documents Required: 10th & 12th Marksheets, Graduation degree (for PG), Migration Certificate, Character Certificate, Caste Certificate (if applicable), Aadhaar Card, Passport photographs.\n- Note: Tuition fees, scholarships (e.g. Josh Scholarship, Post-Matric schemes), and seat quotas are subject to PTU & State Government counselling notifications. For fee details, students must consult official admissions counsellors at 1800 200 3575.\n\nHelp-desk data: admission portal admission.cgc.edu.in; email admissions@cgc.edu.in.",
+      "links": [
+        {
+          "title": "How to Apply",
+          "url": "https://www.cgc.edu.in/how-to-apply"
+        },
+        {
+          "title": "Admissions",
+          "url": "https://www.cgc.edu.in/admissions"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "academic_info",
+      "title": "Academic information",
+      "keywords": [
+        "academic information",
+        "academics at cgc",
+        "affiliated to",
+        "autonomous",
+        "teaching",
+        "curriculum at cgc"
+      ],
+      "answer": "CGC programmes are taught under university affiliation (see the PTU section) and some programmes run under autonomous status per the official B.Tech CSE page. Use the Academic section for course, semester and subject details.",
+      "unconfirmed": null,
+      "links": [
+        {
+          "title": "PTU section",
+          "url": "https://ptu.ac.in/"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "facilities",
+      "title": "Facilities",
+      "keywords": [
+        "facility",
+        "facilities",
+        "amenities",
+        "incubation",
+        "robotics",
+        "3d printing",
+        "animal house",
+        "herbal garden"
+      ],
+      "answer": null,
+      "unconfirmed": "Named in stored data: Advanced Web Technology Lab (PHP/MySQL), Java, Python & AI and Database labs (Computer Applications); Centre of Excellence, robotics incubation cell, 3D printing lab and IEEE Student Branch (Engineering); CPCSEA-approved animal house, herbal garden and pilot formulation plant (Pharmacy).",
+      "links": [
+        {
+          "title": "360° Campus Tour",
+          "url": "https://www.cgc.edu.in/virtual-tour"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "hostel",
+      "title": "Hostel and transport",
+      "keywords": [
+        "hostel",
+        "hostels",
+        "accommodation",
+        "mess",
+        "canteen",
+        "transport",
+        "bus",
+        "pg"
+      ],
+      "answer": null,
+      "unconfirmed": "Residential hostels are mentioned in the stored data. Help-desk data: indicative fee about Rs 1.40 Lakh per year (2-seater non-AC); confirm current rates with admissions. Rooms and transport routes: Information not available yet.",
+      "links": [
+        {
+          "title": "360° Campus Tour",
+          "url": "https://www.cgc.edu.in/virtual-tour"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "clubs",
+      "title": "Clubs",
+      "keywords": [
+        "club",
+        "clubs",
+        "society",
+        "societies",
+        "chapter"
+      ],
+      "answer": null,
+      "unconfirmed": null,
+      "links": [],
+      "follow_ups": []
+    },
+    {
+      "id": "sports",
+      "title": "Sports",
+      "keywords": [
+        "sport",
+        "sports",
+        "ground",
+        "gym",
+        "cricket",
+        "football",
+        "basketball"
+      ],
+      "answer": null,
+      "unconfirmed": null,
+      "links": [],
+      "follow_ups": []
+    },
+    {
+      "id": "activities",
+      "title": "Student activities",
+      "keywords": [
+        "student activities",
+        "events",
+        "fest",
+        "festival",
+        "cultural",
+        "activities"
+      ],
+      "answer": null,
+      "unconfirmed": null,
+      "links": [],
+      "follow_ups": []
+    },
+    {
+      "id": "placements",
+      "title": "Placement information",
+      "keywords": [
+        "placement",
+        "placements",
+        "package",
+        "recruiter",
+        "recruiters",
+        "highest package",
+        "training and placement",
+        "salary"
+      ],
+      "answer": "CGC's Admissions and home pages state 10,000+ placement offers, 1,300+ recruiting companies and a highest package of ₹1.14 Cr per annum. Programme pages quote their own figures (the B.Tech CSE page cites 22 LPA for Batch 2026).",
+      "unconfirmed": "Pre-placement training (aptitude, coding rounds, mock interviews, soft skills) is run by the Corporate Resource Program (CRP).\n\nHelp-desk data for CCT Mohali: 800+ companies, 8500+ offers, highest Rs 45.5 Lacs.",
+      "links": [
+        {
+          "title": "Placements",
+          "url": "https://www.cgc.edu.in/placements"
+        },
+        {
+          "title": "Placement Tracker",
+          "url": "https://www.cgc.edu.in/placement-tracker"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "locations",
+      "title": "Important campus locations",
+      "keywords": [
+        "location of",
+        "where is the",
+        "admission block",
+        "office",
+        "block"
+      ],
+      "answer": null,
+      "unconfirmed": "The stored data mentions an Admission Block for offline admissions. Other locations: Information not available yet.",
+      "links": [
+        {
+          "title": "360° Campus Tour",
+          "url": "https://www.cgc.edu.in/virtual-tour"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "contact",
+      "title": "Contact and help",
+      "keywords": [
+        "contact",
+        "phone",
+        "helpline",
+        "email",
+        "address",
+        "call",
+        "whatsapp",
+        "reach",
+        "help desk",
+        "helpdesk"
+      ],
+      "answer": "Address: Chandigarh Group of Colleges, Sector 112, Landran, Mohali, Punjab 140307. Toll-free: 1800-200-3575. Admission numbers: +91-95921-04444 / 14444 / 24444.",
+      "unconfirmed": "Official Campus Contacts:\n- Address: CGC Landran, Sector 112, Landran, Greater Mohali, Punjab - 140307.\n- Admission Toll-Free Helpline: 1800 200 3575, +91-95921-04444, +91-95921-14444\n- General Office: +91-172-3984200 / info@cgc.edu.in\n- Examination Cell / Registrar: registrar@cgc.edu.in / examcell@cgc.edu.in\n- Student Grievance & Help Desk: helpdesk@cgc.edu.in\n- Training & Placement Cell: crp@cgc.edu.in\n- Official Website: https://www.cgc.edu.in\n\nHelp-desk data: phone 0172-3984200; admissions@cgc.edu.in; principal.cct@cgc.edu.in; CCT website https://www.cctmohali.org/",
+      "links": [
+        {
+          "title": "Contact Us",
+          "url": "https://www.cgc.edu.in/contact-us"
+        }
+      ],
+      "follow_ups": []
+    },
+    {
+      "id": "faculty",
+      "title": "Faculty and leadership",
+      "keywords": [
+        "faculty",
+        "hod",
+        "head of department",
+        "director",
+        "principal",
+        "teacher",
+        "professor",
+        "teachers",
+        "professors"
+      ],
+      "answer": null,
+      "unconfirmed": "- Director Principal, CCT: Dr. Palki Sahib Kaur\\n- HOD Biotechnology, CCT: Dr. Gurpreet Kaur\\n- HOD Computer Applications, CCT: Dr. Inderpreet Kaur\\n- Biotechnology faculty (sample list): Dr. Nitin Sharma, Dr. Preeti Devi, Dr. Mandheer (Associate Professors); Dr. Aditya, Dr. Harjodh, Ms. Shelly Kataria, Mr. Vikas Menon, Ms. Nidhi (Assistant Professors). Other departments: Information not available yet.",
+      "links": [
+        {
+          "title": "CGC Landran",
+          "url": "https://www.cgc.edu.in/"
+        }
+      ],
+      "follow_ups": []
+    }
+  ]
+}

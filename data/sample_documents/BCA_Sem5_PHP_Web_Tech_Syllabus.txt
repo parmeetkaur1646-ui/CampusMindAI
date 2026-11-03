@@ -1,0 +1,33 @@
+# I.K. GUJRAL PUNJAB TECHNICAL UNIVERSITY (IKGPTU)
+## DEPARTMENT OF COMPUTER APPLICATIONS
+### PROGRAM: BACHELOR OF COMPUTER APPLICATIONS (BCA) - SEMESTER V
+Course Code: UGCA1921 | Course Title: Server-Side Web Technologies (PHP)
+
+Unit I: Introduction to PHP
+- History, Features, Server-side vs Client-side scripting
+- Syntax, Variables, Constants, Data types, Operators, Control structures
+- Working with Arrays (Indexed, Associative, Multidimensional)
+- Custom Functions and PHP built-in string and math functions
+
+Unit II: Forms, State & Sessions
+- Handling HTML Forms ($_GET, $_POST, $_REQUEST)
+- File Uploads handling and validation
+- Cookies: creating, reading, updating, and deleting cookies
+- Sessions: session_start(), storing session variables, destroying sessions
+
+Unit III: Database Connectivity with MySQL
+- Overview of relational database connectivity in PHP (PDO and MySQLi)
+- Connection handling, error modes, executing SELECT, INSERT, UPDATE, DELETE queries
+- Prepared Statements and preventing SQL injection
+- Transaction management and recordset pagination
+
+Unit IV: Advanced Web Concepts & OOP in PHP
+- Object-Oriented Programming: Classes, Objects, Constructors, Inheritance, Access Modifiers
+- JSON encoding and decoding in PHP
+- Building RESTful endpoints with PHP
+- Security Best Practices: sanitizing inputs, XSS prevention, CSRF tokens
+
+Prescribed Textbooks:
+1. Luke Welling & Laura Thomson, "PHP and MySQL Web Development", Addison-Wesley.
+2. Steven Holzner, "PHP: The Complete Reference", McGraw-Hill.
+Official Link: https://ptu.ac.in/syllabus | https://ptu.ac.in

@@ -1,0 +1,29 @@
+# CGC LANDRAN - CENTRAL LIBRARY (KNOWLEDGE RESOURCE CENTRE)
+## OFFICIAL STUDENT GUIDE & CODE OF CONDUCT (2025-2026)
+Website: https://www.cgc.edu.in/library | Email: library@cgc.edu.in
+
+1. Facilities & Infrastructure:
+- Centralized, fully air-conditioned library spanning over 25,000 sq. ft.
+- Automated circulation via Koha Open Source ILS and Barcode scanners.
+- Over 40,000 physical volumes and 3,500 active titles.
+- Digital Library wing with 60 dedicated multimedia computing terminals.
+
+2. Subscribed Online Databases & Portals:
+- IEEE Xplore: Over 5 million full-text technical articles and standards.
+- DELNET: Access to Union Catalogues and inter-library loan across 5,000+ national institutions.
+- National Digital Library of India (NDLI): Access to open repository with educational resources.
+- ScienceDirect / Elsevier & SpringerLink: E-journals for biotechnology and pharmacy research.
+- J-Gate: Social science, engineering, and management indexing portal.
+
+3. General Lending Privileges:
+- Undergraduate Students: 3 books for 14 calendar days.
+- Postgraduate Students: 5 books for 21 calendar days.
+- Faculty Members: 8 books for the semester duration.
+
+4. Book Bank Scheme:
+- Every semester, students can enroll in the Book Bank scheme to receive a complete set of required semester textbooks at a nominal institutional fee. Textbooks are returned at the end of semester exams.
+
+5. Rules and Fines:
+- Overdue books incur a fine of Rs. 2/- per day per volume.
+- Defaced or lost books must be replaced with the latest edition by the borrower or reimbursed at double market price.
+- Strict silence must be observed in the general reading hall.

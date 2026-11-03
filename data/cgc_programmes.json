@@ -1,0 +1,385 @@
+{
+  "_help": "Comprehensive CGC Landran course catalog incorporating all major categories, courses, official links, and structured metadata.",
+  "source": "CGC Landran Official Catalog",
+  "checked": "2026-11-02",
+  "categories": [
+    {
+      "category_name": "Engineering — B.Tech / M.Tech",
+      "category_url": "https://www.cgc.edu.in/engineering",
+      "courses": [
+        {
+          "name": "Computer Science Engineering (CSE)",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-cse",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech cse", "cse", "computer science"]
+        },
+        {
+          "name": "Information Technology (IT)",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-it",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech it", "it"]
+        },
+        {
+          "name": "Artificial Intelligence and Machine Learning (AI & ML)",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-in-artificial-intelligence-and-machine-learning",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech cse ai ml", "ai ml"]
+        },
+        {
+          "name": "Artificial Intelligence and Data Science (AI & DS)",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-in-artificial-intelligence-and-data-science",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech ai ds", "ai ds"]
+        },
+        {
+          "name": "Electronics and Communication Engineering (ECE)",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-electronics-and-communication-engineering",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech ece", "ece"]
+        },
+        {
+          "name": "Mechanical Engineering",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-me",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech mechanical", "btech me"]
+        },
+        {
+          "name": "CSE — Data Science",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-cse-data-science",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech cse ds"]
+        },
+        {
+          "name": "CSE — Cyber Security",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-cse-cyber-security",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech cse cyber"]
+        },
+        {
+          "name": "CSE — IoT and Cyber Security, including Blockchain",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-cse-iot-cyber-security-including-blockchain",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech cse iot"]
+        },
+        {
+          "name": "Robotics and Artificial Intelligence",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-robotics-and-ai",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech robotics"]
+        },
+        {
+          "name": "Electronic and Computer Engineering",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-electronics-and-computer-engineering",
+          "duration": "4 Years",
+          "eligibility": "10+2 with Physics and Mathematics min 45%",
+          "fee": "Approx Rs 5.04 to 6.72 Lakh total",
+          "aliases": ["btech electronics computer"]
+        },
+        {
+          "name": "M.Tech in CSE, IT, ECE and Mechanical Engineering",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/m-tech-cse",
+          "duration": "2 Years",
+          "eligibility": "B.E. / B.Tech in relevant field with min 50%",
+          "fee": "Approx Rs 1.5 to 2.5 Lakh total",
+          "aliases": ["mtech cse", "mtech it", "mtech ece", "mtech mechanical"]
+        },
+        {
+          "name": "B.Tech lateral-entry (LEET) options",
+          "level": "Lateral entry",
+          "cgc_url": "https://www.cgc.edu.in/b-tech-leet",
+          "duration": "3 Years",
+          "eligibility": "Diploma or B.Sc. degree with min 45%",
+          "fee": "Approx Rs 3.8 to 5.0 Lakh total",
+          "aliases": ["btech leet"]
+        }
+      ]
+    },
+    {
+      "category_name": "Computer Applications",
+      "category_url": "https://www.cgc.edu.in/computer-applications",
+      "courses": [
+        {
+          "name": "BCA — Bachelor of Computer Applications",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bca",
+          "duration": "3 Years",
+          "eligibility": "10+2 with minimum 50% marks",
+          "fee": "Approx Rs 3.06 Lakh total",
+          "aliases": ["bca"]
+        },
+        {
+          "name": "BCA LEET",
+          "level": "Lateral entry",
+          "cgc_url": null,
+          "duration": "2 Years",
+          "eligibility": "Relevant diploma / eligibility criteria",
+          "fee": "Approx Rs 2.0 to 2.5 Lakh total",
+          "aliases": ["bca leet"]
+        },
+        {
+          "name": "MCA — Master of Computer Applications",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/mca",
+          "duration": "2 Years",
+          "eligibility": "Graduation with Mathematics/Statistics/Computer Science min 50%",
+          "fee": "Approx Rs 2.5 to 3.2 Lakh total",
+          "aliases": ["mca"]
+        }
+      ]
+    },
+    {
+      "category_name": "Business and Commerce",
+      "category_url": "https://www.cgc.edu.in/business-management",
+      "courses": [
+        {
+          "name": "BBA",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bba",
+          "duration": "3 Years",
+          "eligibility": "10+2 with minimum 50% marks",
+          "fee": "Approx Rs 3.06 Lakh total",
+          "aliases": ["bba"]
+        },
+        {
+          "name": "MBA",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/mba",
+          "duration": "2 Years",
+          "eligibility": "Bachelor degree min 50%",
+          "fee": "Approx Rs 3.36 Lakh total",
+          "aliases": ["mba"]
+        },
+        {
+          "name": "MBA in Digital Marketing",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/mba-digital-marketing",
+          "duration": "2 Years",
+          "eligibility": "Bachelor degree min 50%",
+          "fee": "Approx Rs 3.36 Lakh total",
+          "aliases": ["mba digital"]
+        },
+        {
+          "name": "B.Com. (Hons.)",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bachelor-of-commerce",
+          "duration": "3 Years",
+          "eligibility": "10+2 with minimum 50% marks",
+          "fee": "Approx Rs 3.06 Lakh total",
+          "aliases": ["bcom"]
+        }
+      ]
+    },
+    {
+      "category_name": "Pharmacy",
+      "category_url": "https://www.cgc.edu.in/pharmacy",
+      "courses": [
+        {
+          "name": "B.Pharm",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-pharmacy",
+          "duration": "4 Years",
+          "eligibility": "10+2 Science (PCB/PCM) with min 50%",
+          "fee": "Approx Rs 4.5 to 5.2 Lakh total",
+          "aliases": ["bpharm", "bpharmacy"]
+        },
+        {
+          "name": "B.Pharm LEET",
+          "level": "Lateral entry",
+          "cgc_url": "https://www.cgc.edu.in/b-pharmacy-leet",
+          "duration": "3 Years",
+          "eligibility": "D.Pharm from recognized institute",
+          "fee": "Approx Rs 3.5 to 4.0 Lakh total",
+          "aliases": ["bpharm leet"]
+        },
+        {
+          "name": "Pharm.D",
+          "level": "Doctor of Pharmacy",
+          "cgc_url": "https://www.cgc.edu.in/pharm-d-doctor-of-pharmacy",
+          "duration": "6 Years",
+          "eligibility": "10+2 Physics, Chemistry, Biology/Mathematics",
+          "fee": "Approx Rs 9.0 to 11.0 Lakh total",
+          "aliases": ["pharm d", "pharmd"]
+        },
+        {
+          "name": "Pharm.D (Post Baccalaureate)",
+          "level": "Doctor of Pharmacy (post baccalaureate)",
+          "cgc_url": "https://www.cgc.edu.in/pharm-d-post-buccalureate",
+          "duration": "3 Years",
+          "eligibility": "B.Pharm degree",
+          "fee": "Approx Rs 4.5 to 5.5 Lakh total",
+          "aliases": ["pharm d post"]
+        },
+        {
+          "name": "M.Pharm in Pharmaceutics",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/m-pharmacy",
+          "duration": "2 Years",
+          "eligibility": "B.Pharm with min 55%",
+          "fee": "Approx Rs 2.5 to 3.0 Lakh total",
+          "aliases": ["mpharm pharmaceutics"]
+        },
+        {
+          "name": "M.Pharm in Pharmacology",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/mpharma-pharmacology",
+          "duration": "2 Years",
+          "eligibility": "B.Pharm with min 55%",
+          "fee": "Approx Rs 2.5 to 3.0 Lakh total",
+          "aliases": ["mpharm pharmacology"]
+        },
+        {
+          "name": "M.Pharm in Pharmacy Practice",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/m-pharm-in-pharmacy-practice",
+          "duration": "2 Years",
+          "eligibility": "B.Pharm with min 55%",
+          "fee": "Approx Rs 2.5 to 3.0 Lakh total",
+          "aliases": ["mpharm pharmacy practice"]
+        },
+        {
+          "name": "M.Pharm in Regulatory Affairs",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/m-pharm-pharmaceutical-regulatory-affairs",
+          "duration": "2 Years",
+          "eligibility": "B.Pharm with min 55%",
+          "fee": "Approx Rs 2.5 to 3.0 Lakh total",
+          "aliases": ["mpharm regulatory affairs"]
+        }
+      ]
+    },
+    {
+      "category_name": "Science and Biotechnology",
+      "category_url": "https://www.cgc.edu.in/biotechnology",
+      "courses": [
+        {
+          "name": "B.Sc. Biotechnology",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bsc-biotechnology",
+          "duration": "3 Years",
+          "eligibility": "10+2 Science stream preferred",
+          "fee": "Approx Rs 3.06 Lakh total",
+          "aliases": ["bsc biotechnology", "biotech"]
+        },
+        {
+          "name": "M.Sc. Biotechnology",
+          "level": "Postgraduate",
+          "cgc_url": "https://www.cgc.edu.in/msc-biotechnology",
+          "duration": "2 Years",
+          "eligibility": "Bachelor degree in relevant field min 50%",
+          "fee": "Approx Rs 1.3 to 1.84 Lakh total",
+          "aliases": ["msc biotechnology", "msc biotech"]
+        },
+        {
+          "name": "B.Sc. Artificial Intelligence and Machine Learning",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bsc-artificial-intelligence-machine-learning",
+          "duration": "3 Years",
+          "eligibility": "10+2 from recognised board",
+          "fee": "Approx Rs 2.8 to 3.1 Lakh total",
+          "aliases": ["bsc ai ml"]
+        },
+        {
+          "name": "B.Sc. Multimedia",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bsc-multimedia",
+          "duration": "3 Years",
+          "eligibility": "10+2 from recognised board",
+          "fee": "Approx Rs 2.58 Lakh total",
+          "aliases": ["bsc multimedia", "multimedia"]
+        },
+        {
+          "name": "B.Sc. Graphics and Web Designing",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bsc-graphic-web-designing",
+          "duration": "3 Years",
+          "eligibility": "10+2 from recognised board",
+          "fee": "Approx Rs 2.58 Lakh total",
+          "aliases": ["graphics and web designing", "graphics"]
+        },
+        {
+          "name": "B.Sc. (Hons.) Nutrition and Dietetics",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/b-sc-nutrition-and-dietetics",
+          "duration": "3 Years",
+          "eligibility": "10+2 with min 50% marks",
+          "fee": "Approx Rs 3.01 Lakh total",
+          "aliases": ["nutrition", "nutrition and dietetics"]
+        }
+      ]
+    },
+    {
+      "category_name": "Hotel Management and Tourism",
+      "category_url": "https://www.cgc.edu.in/hotel-management",
+      "courses": [
+        {
+          "name": "BHMCT — Hotel Management and Catering Technology",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bsc-hmct",
+          "duration": "4 Years",
+          "eligibility": "10+2 from recognised board",
+          "fee": "Approx Rs 3.5 to 4.2 Lakh total",
+          "aliases": ["bhmct"]
+        },
+        {
+          "name": "BTTM — Bachelor of Tourism and Travel Management",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bttm-bachelor-of-tourism-and-travel-management",
+          "duration": "4 Years",
+          "eligibility": "10+2 from recognised board",
+          "fee": "Approx Rs 3.0 Lakh total",
+          "aliases": ["bttm", "tourism"]
+        },
+        {
+          "name": "BMS — Airlines, Tourism and Hospitality",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bachelor-of-management-studies-airlines-tourism-hospitality",
+          "duration": "3 Years",
+          "eligibility": "10+2 from recognised board",
+          "fee": "Approx Rs 3.0 Lakh total",
+          "aliases": ["bms", "airlines tourism"]
+        },
+        {
+          "name": "B.Voc. Hospitality and Catering Management",
+          "level": "Undergraduate",
+          "cgc_url": "https://www.cgc.edu.in/bachelor-of-vocation-hospitality-and-catering-management",
+          "duration": "3 Years",
+          "eligibility": "10+2 from recognised board",
+          "fee": "Approx Rs 2.5 Lakh total",
+          "aliases": ["bvoc hospitality"]
+        }
+      ]
+    }
+  ]
+}
